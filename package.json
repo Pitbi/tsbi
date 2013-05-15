@@ -1,0 +1,29 @@
+{
+  "name": "tsbi",
+  "version": "0.0.0",
+  "description": "TSBI Construct. ",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~2.5.9",
+    "mongoose": "~3.1.1",
+    "connect-mongo": "~0.2.0",
+    "ejs": "~0.8.0",
+    "async": "0.2.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Pitbi/tsbi.git"
+  },
+  "keywords": [
+    "tsbi",
+    "consctruct",
+    "toiture",
+    "charpente",
+    ""
+  ],
+  "author": "Pierre Biezemans",
+  "license": "BSD"
+}
