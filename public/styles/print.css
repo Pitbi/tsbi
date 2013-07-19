@@ -1,0 +1,107 @@
+/* -------------------------------------------
+project:	Merix Studio / Print
+date:		2007/11/05
+------------------------------------------- */
+
+body { padding: 10px; background: #fff; color: #333; }
+
+/* LAYOUT
+------------------------------------------- */
+#wrapper { margin: 0; padding: 0; background: #fff; }
+.home #wrapper { background: #fff; }
+ #wrapper div.wrapper-inner { position: static; background: #fff; }
+  #top { width: auto; height: auto; }
+   #logo { position: static; left: auto; top: auto; margin: 0 0 15px; padding: 0 0 15px; border-bottom: 1px solid #aaa; }
+    #logo a { display: block; overflow: hidden; width: auto; height: auto; background: #fff; text-indent: 0; }
+     #logo a img { display: block; }
+   #search-form { display: none; }
+   #search-results { display: none; }
+   #tools { display: none; }
+   #nav { display: none; }
+   #look { display: none; }
+  #featured { width: auto; height: auto; margin: 0 0 15px; padding: 0; border: none; background: #fff;  color: #333; }
+   #featured h1 { margin: 0 0 10px; color: #000; font-size: 1.8em; text-transform: uppercase; }
+    #featured h1 span { color: #a8b934; }
+   #featured p.image { position: static; left: 0; top: 0; margin: 0 0 5px; }
+    #featured p.image img { border: 10px solid #040404; }
+   #featured p.date { margin: 0 0 10px; font-size: 1.1em; text-transform: uppercase; }
+    #featured p.date span { padding: 0 2px; }
+   #featured div.details { padding: 0 0 0 14px; border-left: 10px solid #040404; }
+   #featured ul.tabs { display: none; }
+   #featured ul.controls { display: none; }
+  #introduction-a { overflow: visible; width: auto; margin: 0; padding: 0 0 1px; background: #fff; color: #333; }
+   #introduction-a div.column { float: none; width: auto; margin: 0 0 15px; padding: 15px 0 0; border-top: 1px solid #aaa; }
+    #introduction-a div.column h1 { color: #000; }
+     #introduction-a div.column p.more { position: static; margin: 0 0 15px; font-size: 1.1em; line-height: 1.1em; }
+     #introduction-a div.column p.more a { float: none; padding: 0; background: #fff; color: #333; text-transform: uppercase; text-decoration: none; }
+     #introduction-a div.column p.more a:hover { background-color: #fff; color: #000; }
+  #content { position: static; overflow: visible; width: auto; margin: 0; padding: 0; }
+   #side { display: none; }
+   .single #main { float: none; width: auto; margin: 0; padding: 0; background: #fff; }
+   #main { float: none; width: auto; padding: 0; background: #fff; min-height: 0; }
+    #breadcrumbs { position: relative; margin: 0 0 15px; padding: 0 0 14px; border-bottom: 1px solid #aaa; background: #fff; color: #333; font-size: 1.1em; }
+    .single #breadcrumbs { margin: 0 0 15px; padding-left: 0; border-bottom: 1px solid #aaa; background: none; color: #333; font-size: 1.1em; }
+     #breadcrumbs a { padding: 0 2px; color: #888; text-decoration: none; }
+     #breadcrumbs a:hover { text-decoration: underline; }
+     #breadcrumbs a.home { padding: 0; background: none; }
+     #breadcrumbs strong { padding: 0 2px; color: #3b5e73; }
+ #introduction-b { overflow: visible; width: auto; margin: 0; padding: 0; background: #fff; }
+  #introduction-b div.column { float: none; width: auto; margin: 0 0 15px; padding: 15px 0 0; border-top: 1px solid #aaa; }
+   #introduction-b div.column h2 { color: #000; font-size: 2.2em; text-transform: lowercase; }
+   #introduction-b div.column div.photo { overflow: hidden; width: auto; padding: 0; background: none; }
+    #introduction-b div.column p.date { color: #555; font-size: 1.1em; }
+	 #introduction-b div.column p.date strong { color: #333; font-weight: normal; }
+      #introduction-b div.column p.date strong span { padding: 0 2px; }
+    #introduction-b div.column p.button-a { margin: 0 0 15px; font-size: 1.1em; }
+     #introduction-b div.column p.button-a a { padding: 0; background: #fff; color: #000; line-height: 1; }
+      #introduction-b div.column p.button-a a span { padding: 0; background: #fff; color: #000; }
+ #footer { overflow: hidden; width: auto; margin: 0; padding: 15px 0; border-top: 1px solid #aaa; color: #333; text-transform: uppercase; }
+  #footer p { display: none;  }
+  #footer p.first { display: block; float: none; }
+   #footer p em { font-style: normal; }
+   
+div.infobox { display: none; }
+  
+#homepage-overlay { display: none; }
+#homepage-loader { display: none; }
+
+#sitemap { display: none; }
+
+/* OTHER
+------------------------------------------- */
+#post-info { padding-top: 15px; border-top: 1px solid #aaa; }
+#post-responses { padding-top: 15px; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;  }
+#post-comment { display: none; }
+ div.toolbox { display: none; }
+ div.post-response { width: auto; _zoom: 1; }
+ 
+#contact-directions,
+#contact-form { display: none; }
+
+#work-project { position: static; overflow: visible; margin: 0; padding: 0; }
+ #work-project div.buttons { display: none; }
+ #work-project div.screens { position: static; width: auto; margin: 0 0 15px; border-right: none; }
+  #work-project div.screens div.pic { position: relative; overflow: hidden; width: auto; height: auto; padding: 0; border-bottom: 0; background: none; }
+   #work-project div.screens div.pic p { position: relative; z-index: 10; margin: 0; }
+    #work-project div.screens div.pic p img { border: 1px solid #aaa; }
+    #viewport-clone { display: none; }
+	#viewport-loader { display: none; }
+    #work-project div.screens div.pic p img { display: block; }
+   #work-project div.screens div.pic ul.controls { display: none; }
+  #work-project div.screens ul.index { display: none; }
+
+#work-projects { position: static; overflow: visible; margin: 0 0 15px; padding: 15px 0 0; border-top: 1px solid #aaa; }
+ #work-projects h2 { display: block; float: none; margin: 0 0 15px; }
+ #work-projects ul.d { float: none; width: auto; margin: 0; padding: 0; border-left: none; }
+  #work-projects ul.d li { float: none; }
+   #work-projects ul.d li a { width: auto; padding: 0; background: none; }
+    #work-projects ul.d li a strong { display: inline; }
+   #work-projects ul.d li a:hover { background: none; color: #333; }
+    #work-projects ul.d li a:hover strong { background: none; color: #333; }
+	
+div.server-error { min-height: 0; margin: 0 0 15px; padding: 0; background: #fff; color: #333; }
+ div.server-error h1 { margin-bottom: 15px; }
+ div.server-error div.info { padding-left: 22px; border-left: 1px solid #1e1e1e; }
+ div.server-error p { margin: 0 0 5px; }
+
+#e404 h1 { height: auto; background: none; text-indent: 0; }
