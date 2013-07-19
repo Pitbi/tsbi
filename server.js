@@ -9,7 +9,7 @@ var server 				= express();
 //CONTROLLER
 
 var HomeController = require("./controllers/home_controller");
-
+var TechniquesController = require("./controllers/techniques_controller")
 
 server.configure(function () {
   server.use(express.logger({format: "dev", stream: process.stdout}));
@@ -33,7 +33,8 @@ server.configure(function () {
 //HTTP REQUEST
 
 var routes = {
-  "/": HomeController
+  "/": HomeController,
+  "/techniques": TechniquesController
 };
 
 server.use(function (req, res, next) {

@@ -21,7 +21,7 @@ button { overflow: visible; cursor: pointer; }
 
 abbr,acronym { cursor: help; }
 
-a { color: #885a44; text-decoration: underline; }
+a { color: #885a44; text-decoration: none; margin: auto;}
 a:hover, a:focus, a:active { text-decoration: none; }
 
 /* HEADINGS
@@ -46,7 +46,7 @@ legend.offset { display: none; }
 
 /* LAYOUT
 ------------------------------------------- */
-#wrapper { margin: -1px 0 0; padding: 0 0 0 1px; background: #fff url(../images/bg-sub.png) repeat-x; position: relative;}
+#wrapper { margin: -1px 0 0; padding: 0 0 8px 1px; background-color: rgba(0, 0, 0, 0.2); position: relative;}
 .home #wrapper { background: #19110d url(../images/bg-home.png) repeat-x; }
  #wrapper div.wrapper-inner { position: relative; width: 100%; background: url(../images/bg-sub-black.png) 50% 185px no-repeat; }
   #top { position: relative; width: 950px; height: 185px; margin: 0 auto; z-index: 250; }
@@ -90,13 +90,13 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #tools li a.off:hover { background-position: 0 -71px; }
      #tools li a.on { background-position: 0 4px; }
      #tools li a.on:hover { background-position: 0 -21px; }
-   #nav { position: absolute; left: 0; top: 147px; width: 100%; border-top: 1px solid #312824;}
-    #nav ul { float: right; list-style: none; height: 37px; margin: 0; padding: 0; }
-     #nav ul li { float: left; border-left: 1px solid #372a23; background: url(../images/bullet-a.gif) 50% 400px no-repeat;}
+   #nav { position: absolute; left: 0; top: 147px; width: 100%;}
+    #nav ul { float: right; list-style: none; height: 20px; margin: 0; padding: 0; }
+     #nav ul li { float: left;}
      #nav ul li:hover { background-position: 50% 100%; background-color: #1e1511; }
      #nav ul li.home { border-left: none; }
       #nav ul li em { display: none; }
-      #nav ul li a { float: left; overflow: hidden; height: 37px; padding: 0 8px;}
+      #nav ul li a { float: left; overflow: hidden; height: 24px; padding: 0 8px; font-size: 16px;}
       #nav ul li a.active { background-color: #040404; }
       #nav ul li.home a { width: 73px; background-position: -400px 0; } #nav li.home a:hover { background-position: -400px -37px; } #nav li.home a.active { background-position: -400px -74px !important; }
       #nav ul li.work a { width: 73px; background-position: 0 0; } #nav li.work a:hover { background-position: 0 -37px; } #nav li.work a.active { background-position: 0 -74px !important; }
@@ -118,7 +118,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #look h2.work a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/work-pl.png) no-repeat; text-indent: -10001em; }
     #look p { font-size: 1.1em; line-height: 1.27em; }
      #look p a { color: #735d53; text-decoration: none; }
-  #featured { position: relative; width: 418px; height: 270px; margin: 0 auto; padding: 0 0 0 500px; background: #181b1a url(../images/bg-featured.png) 100% 0 repeat-y; border: 1px solid #040404; border-width: 9px 16px 12px; color: #838685; }
+  #featured { position: relative; width: 418px; height: 270px; margin: 0 auto; padding: 0 0 0 500px; background: rgba(0, 0, 0, 0.8) url(../images/bg-featured.png) 100% 0 repeat-y; border: 1px solid; border-color:  rgba(0, 0, 0, 0.6); border-width: 9px 16px 12px; color: #838685; }
    #featured h1 { margin: 35px 0 2px; color: #fff; font-size: 1.8em; text-transform: uppercase; }
     #featured h1 span { color: #a8b934; }
    #featured p.image { position: absolute; left: 0; top: 0; }
