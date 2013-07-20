@@ -51,7 +51,7 @@ legend.offset { display: none; }
  #wrapper div.wrapper-inner { position: relative; width: 100%;}
   #top { position: relative; width: 950px; height: 145px; margin: 0 auto; z-index: 250; }
   #top.short { height: 125px; }
-   #logo { position: absolute; left: 12px; top: 45px; margin: 0; }
+   #logo { position: absolute; top: 45px; margin: 0; }
     #logo a {overflow: hidden; width: 224px; height: 65px; background: url(../images/logo-dark.png) no-repeat; text-indent: -10001px; }
     .pl #logo a {}
      #logo a img {}
@@ -158,8 +158,8 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #introduction-a div.column p.more a:hover { background-color: #000; color: #fff; }
   #content { overflow: hidden; width: 934px; margin: 0 auto; padding: 9px 16px 10px 0; }
    #side { float: left; width: 268px; padding: 157px 0 0 16px; }
-    #subnav { position: relative; top: -157px; list-style: none; margin: 0 0 -157px -16px; width: 245px; padding: 35px 0 30px 20px; border: 1px solid #040404; border-width: 0 3px 12px 16px; background: url(../images/bg-subnav.png) repeat-y; min-height: 80px; }
-     #subnav li { width: 245px; border-top: 1px solid #555f5a; line-height: 1em; }
+    #subnav { position: relative; top: -157px; list-style: none; margin: 0 0 -157px -16px; width: 245px; padding: 35px 0 30px 20px; min-height: 80px; }
+     #subnav li { width: 245px; line-height: 1em; }
      #subnav li.first { border-top: none; }
       #subnav li a { position: relative; display: block; width: 210px; margin: 0 -3px 0 0; padding: 10px 18px 10px 20px; background: url(../images/bullet-d.gif) 1000px 50% no-repeat; color: #98a79f; text-decoration: none; }
       #subnav li a:hover { background-color: #242826; background-position: 100% 50%; color: #eee; }

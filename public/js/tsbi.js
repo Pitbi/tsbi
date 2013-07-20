@@ -27,7 +27,7 @@ $(function () {
 	
 	setInterval(function(){
 		switchToNextFeature();
-	},10000)
+	},12000)
 
 	var switchToNextFeature = function () {
 		var currentFeature = "#feature" + featureIndex;
