@@ -1,42 +1,8 @@
 include ../layouts/application
 
 		#featured
-			h1
-				| Couverture 
-				span
-					small (Ardoise, tuile et Zinguerie)
-			p.image
-				img(src='images/tsbi_home.jpg', alt='TSBI', title='TSBI', width='457', height='270')
-			//-p.date
-				| Added: 15
-				span /
-				| 10
-				span /
-				| 2007
-			.details
-				p
-					| Nous intervenons sur la walonnie, en habitats privés, collectifs et sites industriels, pour des toitures à refaire à neuf ou à rénover. De plus nous proposons des services comme le nettoyage de gouttières, isolation ou encore la pose et le remplacement de vélux. Nous faisons également les couvertures, en ardoises naturelles, en tuiles, en taules, en zinc, en cuivre. Adressez-vous à nous en toute confiance pour des études gratuites chez vous ou sur plans dans un délai rapide.
-				
-			//-ul.tabs
-				li.visit
-					a(href='./')
-						span Visit
-				li
-					strong
-						span Overview
-				li
-					a(href='./')
-						span View project
-				li
-					a(href='./')
-						span View code
-			ul.controls
-				li.prev
-					a(href='./')
-						span Previous
-				li.next
-					a(href='./')
-						span Next
+			include includes/features
+			
 		#introduction-a
 			.column.first
 				h1

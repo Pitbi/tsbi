@@ -5,4 +5,33 @@ $(function () {
       $(this).addClass('active');
     }
 	});
+
+	var featureIndex = 1;
+	$(".nextFeature").click(function () {
+		var currentFeature = "#feature" + featureIndex;
+		featureIndex = featureIndex + 1;
+		var nextFeature =  "#feature" + (featureIndex);
+
+		$(currentFeature).css("display", "none");
+		if ($(nextFeature).is("div")) {
+			$(nextFeature).css("display", "block");	
+		} else {
+			featureIndex = 1;
+			$("#feature1").css("display", "block");
+		}
+	});
+
+	$(".previousFeature").click(function () {
+		var currentFeature = "#feature" + featureIndex;
+		featureIndex = featureIndex - 1;
+		var nextFeature =  "#feature" + (featureIndex);
+
+		$(currentFeature).css("display", "none");
+		if ($(nextFeature).is("div")) {
+			$(nextFeature).css("display", "block");	
+		} else {
+			featureIndex = 3;
+			$("#feature3").css("display", "block");
+		}
+	});
 });

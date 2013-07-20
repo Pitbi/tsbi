@@ -4,7 +4,7 @@ date:		2007/11/05
 ------------------------------------------- */
 
 html { min-height: 100%; margin-bottom: 1px; background: #fff; font-size: 100.01%; }
-body { margin: 0; padding: 1px 0 0; color: #555; font: 62.5%/1.5 Arial,Helvetica,sans-serif; }
+body { margin: 0; padding: 1px 0 0; color: #555; font: 62.5%/1.5 'Open Sans',Arial,Helvetica,sans-serif;}
 textarea, input, select, option, button{ font: 1em Arial,Helvetica,sans-serif; }
 
 /* RE-SETS
@@ -46,10 +46,10 @@ legend.offset { display: none; }
 
 /* LAYOUT
 ------------------------------------------- */
-#wrapper { margin: -1px 0 0; padding: 0 0 8px 1px; background-color: rgba(0, 0, 0, 0.2); position: relative;}
+#wrapper { margin: -1px 0 0; padding: 0 0 8px 1px; position: relative; background-color: rgba(252, 250, 225, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
 .home #wrapper { background: #19110d url(../images/bg-home.png) repeat-x; }
- #wrapper div.wrapper-inner { position: relative; width: 100%; background: url(../images/bg-sub-black.png) 50% 185px no-repeat; }
-  #top { position: relative; width: 950px; height: 185px; margin: 0 auto; z-index: 250; }
+ #wrapper div.wrapper-inner { position: relative; width: 100%;}
+  #top { position: relative; width: 950px; height: 145px; margin: 0 auto; z-index: 250; }
   #top.short { height: 125px; }
    #logo { position: absolute; left: 12px; top: 45px; margin: 0; }
     #logo a {overflow: hidden; width: 224px; height: 65px; background: url(../images/logo-dark.png) no-repeat; text-indent: -10001px; }
@@ -90,14 +90,14 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #tools li a.off:hover { background-position: 0 -71px; }
      #tools li a.on { background-position: 0 4px; }
      #tools li a.on:hover { background-position: 0 -21px; }
-   #nav { position: absolute; left: 0; top: 147px; width: 100%;}
+   #nav { position: absolute; left: 0; top: 110px; width: 100%;}
     #nav ul { float: right; list-style: none; height: 20px; margin: 0; padding: 0; }
      #nav ul li { float: left;}
      #nav ul li:hover { background-position: 50% 100%; background-color: #1e1511; }
      #nav ul li.home { border-left: none; }
       #nav ul li em { display: none; }
       #nav ul li a { float: left; overflow: hidden; height: 24px; padding: 0 8px; font-size: 16px;}
-      #nav ul li a.active { background-color: #040404; }
+      #nav ul li a.active { background-color: rgba(0, 0, 0, 0.1); }
       #nav ul li.home a { width: 73px; background-position: -400px 0; } #nav li.home a:hover { background-position: -400px -37px; } #nav li.home a.active { background-position: -400px -74px !important; }
       #nav ul li.work a { width: 73px; background-position: 0 0; } #nav li.work a:hover { background-position: 0 -37px; } #nav li.work a.active { background-position: 0 -74px !important; }
       #nav ul li.company a { width: 94px; background-position: -72px 0; } #nav li.company a:hover { background-position: -72px -37px; } #nav li.company a.active { background-position: -72px -74px !important; }
@@ -112,14 +112,14 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
       .pl #nav ul li.blog a { width: 67px; background-position: -236px 0; } .pl #nav li.blog a:hover { background-position: -236px -37px; } .pl #nav li.blog a.active { background-position: -236px -74px !important; }
       .pl #nav ul li.clients a { width: 81px; background-position: -303px 0; } .pl #nav li.clients a:hover { background-position: -303px -37px; } .pl #nav li.clients a.active { background-position: -303px -74px !important; }
       .pl #nav ul li.contact a { width: 85px; background-position: -384px 0; } .pl #nav li.contact a:hover { background-position: -384px -37px; } .pl #nav li.contact a.active { background-position: -384px -74px !important; }
-   #look { position: absolute; left: 500px; bottom: 40px; width: 450px; padding: 8px 13px 0 0; color: #735d53; }
+   #look { position: absolute; left: 500px; top: 70px; width: 450px; padding: 8px 13px 0 0; color: #735d53; }
     #look h2 { margin: 0 0 5px; }
      #look h2.cms a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/vashka-manager.png) no-repeat; text-indent: -10001em; }
      #look h2.work a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/work-pl.png) no-repeat; text-indent: -10001em; }
     #look p { font-size: 1.1em; line-height: 1.27em; }
      #look p a { color: #735d53; text-decoration: none; }
-  #featured { position: relative; width: 418px; height: 270px; margin: 0 auto; padding: 0 0 0 500px; background: rgba(0, 0, 0, 0.8) url(../images/bg-featured.png) 100% 0 repeat-y; border: 1px solid; border-color:  rgba(0, 0, 0, 0.6); border-width: 9px 16px 12px; color: #838685; }
-   #featured h1 { margin: 35px 0 2px; color: #fff; font-size: 1.8em; text-transform: uppercase; }
+  #featured { position: relative; width: 418px; height: 270px; margin: 0 auto;  padding: 0 0 0 500px; background: rgba(0, 0, 0, 1) url(../images/bg-featured.png) 100% 0 repeat-y; border: 1px solid; border-color:  rgba(0, 0, 0, 0.6); border-width: 9px 16px 12px; color: #838685; }
+   #featured h1 { margin: 35px 0 2px; color: #fff; font-size: 1.8em;}
     #featured h1 span { color: #a8b934; }
    #featured p.image { position: absolute; left: 0; top: 0; }
    #featured p.date { margin: 0 0 20px; font-size: 1em; text-transform: uppercase; }
@@ -138,7 +138,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
       #featured ul.tabs li a span { cursor: pointer; }
       #featured ul.tabs li a:hover span { background-position: 100% -26px; }
       #featured ul.tabs li strong span { background-position: 100% -52px !important; }
-   #featured ul.controls { position: absolute; left: 0; top: 240px; list-style: none; margin: 0; padding: 0; }
+   #featured ul.controls { position: absolute; left: 0; top: 250px; list-style: none; margin: 0; padding: 0; }
     #featured ul.controls li { display: inline; float: left; margin: 0 1px 0 0; }
      #featured ul.controls li a { overflow: hidden; float: left; width: 30px; height: 30px; }
      #featured ul.controls li span { float: left; width: 30px; height: 30px;}
@@ -579,3 +579,11 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 .dp_empty{ background: #eee; }
 .dp_today {	background: #daf2e6; }
 .dp_selected {	color: #fff; background: #328dcf; }
+
+
+/* HOME FEATURE
+--------------------------------------------- */
+
+#feature2, #feature3 {
+  display:none;
+}
