@@ -8,17 +8,7 @@ $(function () {
 
 	var featureIndex = 1;
 	$(".nextFeature").click(function () {
-		var currentFeature = "#feature" + featureIndex;
-		featureIndex = featureIndex + 1;
-		var nextFeature =  "#feature" + (featureIndex);
-
-		$(currentFeature).css("display", "none");
-		if ($(nextFeature).is("div")) {
-			$(nextFeature).css("display", "block");	
-		} else {
-			featureIndex = 1;
-			$("#feature1").css("display", "block");
-		}
+		switchToNextFeature();
 	});
 
 	$(".previousFeature").click(function () {
@@ -34,4 +24,23 @@ $(function () {
 			$("#feature3").css("display", "block");
 		}
 	});
+	
+	setInterval(function(){
+		switchToNextFeature();
+	},10000)
+
+	var switchToNextFeature = function () {
+		var currentFeature = "#feature" + featureIndex;
+		featureIndex = featureIndex + 1;
+		var nextFeature =  "#feature" + (featureIndex);
+
+		$(currentFeature).css("display", "none");
+		if ($(nextFeature).is("div")) {
+			$(nextFeature).css("display", "block");	
+		} else {
+			featureIndex = 1;
+			$("#feature1").css("display", "block");
+		}
+	}
 });
+

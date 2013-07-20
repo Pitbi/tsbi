@@ -93,7 +93,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
    #nav { position: absolute; left: 0; top: 110px; width: 100%;}
     #nav ul { float: right; list-style: none; height: 20px; margin: 0; padding: 0; }
      #nav ul li { float: left;}
-     #nav ul li:hover { background-position: 50% 100%; background-color: #1e1511; }
+     #nav ul li:hover { background-position: 50% 100%; background-color: rgba(0, 0, 0, 0.2); }
      #nav ul li.home { border-left: none; }
       #nav ul li em { display: none; }
       #nav ul li a { float: left; overflow: hidden; height: 24px; padding: 0 8px; font-size: 16px;}
@@ -112,7 +112,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
       .pl #nav ul li.blog a { width: 67px; background-position: -236px 0; } .pl #nav li.blog a:hover { background-position: -236px -37px; } .pl #nav li.blog a.active { background-position: -236px -74px !important; }
       .pl #nav ul li.clients a { width: 81px; background-position: -303px 0; } .pl #nav li.clients a:hover { background-position: -303px -37px; } .pl #nav li.clients a.active { background-position: -303px -74px !important; }
       .pl #nav ul li.contact a { width: 85px; background-position: -384px 0; } .pl #nav li.contact a:hover { background-position: -384px -37px; } .pl #nav li.contact a.active { background-position: -384px -74px !important; }
-   #look { position: absolute; left: 500px; top: 70px; width: 450px; padding: 8px 13px 0 0; color: #735d53; }
+   #look { position: absolute; left: 160px; top: 100px; width: 450px; padding: 8px 13px 0 0; color: #735d53; }
     #look h2 { margin: 0 0 5px; }
      #look h2.cms a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/vashka-manager.png) no-repeat; text-indent: -10001em; }
      #look h2.work a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/work-pl.png) no-repeat; text-indent: -10001em; }
