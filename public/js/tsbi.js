@@ -1,5 +1,16 @@
 $(function () {
 	var url = window.location.pathname;
+	$("#subnav li a").click(function () {
+		$('#subnav li a').each(function(){
+    	$(this).removeClass('active');
+    	var pageId = $(this).attr("href");
+    	$(pageId).css("display", "none");
+		});
+		$(this).addClass("active");
+    var pageId = $(this).attr("href");
+    $(pageId).css("display", "block");
+	});
+
 	$('#nav li a').each(function(){
     if(url === ($(this).attr("href"))){
       $(this).addClass('active');

@@ -162,15 +162,15 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #subnav li { width: 245px; line-height: 1em; }
      #subnav li.first { border-top: none; }
       #subnav li a { position: relative; display: block; width: 210px; margin: 0 -3px 0 0; padding: 10px 18px 10px 20px; background: url(../images/bullet-d.gif) 1000px 50% no-repeat; color: #98a79f; text-decoration: none; }
-      #subnav li a:hover { background-color: #242826; background-position: 100% 50%; color: #eee; }
-      #subnav li a.active { background-color: #040404; background-position: 100% 50%; color: #fff; }
+      #subnav li a:hover { background-position: 100% 50%; color: #885a44; }
+      #subnav li a.active { background-position: 100% 50%; color: #885a44;}
       #subnav li ul { overflow: hidden; list-style: none; width: 230px; margin: 0; padding: 5px 0 0; }
        #subnav li li { float: left; width: 210px; padding: 0 0 0 20px; border-top: none; font-size: 0.83em; line-height: 1.6; text-transform: uppercase; }
         #subnav li li a { float: left; width: 195px; margin: 0; padding: 5px 0 5px 15px; background: url(../images/bullet-gc.gif) 0 9px no-repeat; }
         #subnav li li a.active { background: url(../images/bullet-gc.gif) 0 9px no-repeat !important; }
-        #subnav li li a:hover { background: url(../images/bullet-gb.gif) 100% 9px no-repeat; color: #fff; }
+        #subnav li li a:hover { background: url(../images/bullet-gb.gif) 100% 9px no-repeat; color: #885a44; }
    .single #main { float: none; width: auto; margin: 0 0 0 16px; padding: 0 0 0 35px; background: #fff; }
-   #main { float: right; width: 578px; padding: 0 22px 0 50px; background: #fff; min-height: 200px; }
+   #main { float: right; width: 576px; padding: 0 22px 0 50px; background: #fff; min-height: 200px; border: 1px solid rgba(0, 0, 0, 0.2);}
     #breadcrumbs { position: relative; margin: 0 0 25px -20px; padding: 16px 0 14px; background: url(../images/sep-c.gif) 0 100% repeat-x; color: #888; font-size: 1em; text-transform: uppercase; }
     .single #breadcrumbs { margin: 0 0 25px -35px; padding-left: 20px; border-bottom: 1px solid #e5e5e5; background: none; color: #888; font-size: 1em; text-transform: uppercase; }
      #breadcrumbs a { padding: 0 2px; color: #888; text-decoration: none; }
@@ -500,7 +500,7 @@ ul.clients { overflow: hidden; list-style: none; width: 100%; margin: 0 0 15px; 
   ul.clients li img { display: block; margin: 0 auto; }
   
 /* jobs */
-#job { padding: 140px 39px 0; background: url(../images/jobs-top.jpg) 0 0 no-repeat; line-height: 2em; }
+#job { padding: 40px 39px 0; background: url(../images/jobs-top.jpg) 0 0 no-repeat; line-height: 2em; }
   #job .paper { margin: 0 -39px 20px; padding: 0 39px 50px; background: url(../images/jobs-bottom.jpg) 50% 100% no-repeat; }
   #job ul.a li { padding-left: 30px; background-position: 6px 9px; }
 
@@ -584,6 +584,11 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 /* HOME FEATURE
 --------------------------------------------- */
 
-#feature2, #feature3 {
+#feature2, #feature3, #ardoise_naturelle {
   display:none;
+}
+
+#main img {
+  width: 140px;
+  padding: 8px;
 }
