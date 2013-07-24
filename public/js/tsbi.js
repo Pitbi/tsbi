@@ -1,5 +1,10 @@
 $(function () {
+
 	var url = window.location.pathname;
+	console.log(url);
+	if (url != "/") {
+		$("#wrapper").css("height", "100%");
+	}
 	$("#subnav li a").click(function () {
 		$('#subnav li a').each(function(){
     	$(this).removeClass('active');
