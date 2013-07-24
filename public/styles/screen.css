@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0 0 12px; font: normal 2.4em Arial,Helvetica,sa
 h1 { font-size: 2.2em; }
 h1 a, h2 a { text-decoration: none; }
 h1 a:hover, h2 a:hover { text-decoration: underline; }
-h2 { font-size: 1.9em; color: #000; }
+h2 { font-size: 1.4em; color: #000; }
 h3 { font-size: 1.6em; }
 h4 { font-size: 1.167em; }
 h5 { font-size: 1.000em; }
@@ -49,9 +49,9 @@ legend.offset { display: none; }
 #wrapper { margin: -1px 0 0; padding: 0 0 8px 1px; position: relative; background-color: rgba(252, 250, 225, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
 .home #wrapper { background: #19110d url(../images/bg-home.png) repeat-x; }
  #wrapper div.wrapper-inner { position: relative; width: 100%;}
-  #top { position: relative; width: 950px; height: 145px; margin: 0 auto; z-index: 250; }
+  #top { position: relative; width: 950px; height: 115px; margin: 0 auto; z-index: 250; }
   #top.short { height: 125px; }
-   #logo { position: absolute; top: 45px; margin: 0; }
+   #logo { position: absolute; top: 15px; margin: 0; }
     #logo a {overflow: hidden; width: 224px; height: 65px; background: url(../images/logo-dark.png) no-repeat; text-indent: -10001px; }
     .pl #logo a {}
      #logo a img {}
@@ -90,7 +90,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #tools li a.off:hover { background-position: 0 -71px; }
      #tools li a.on { background-position: 0 4px; }
      #tools li a.on:hover { background-position: 0 -21px; }
-   #nav { position: absolute; left: 0; top: 110px; width: 100%;}
+   #nav { position: absolute; left: 0; top: 80px; width: 100%;}
     #nav ul { float: right; list-style: none; height: 20px; margin: 0; padding: 0; }
      #nav ul li { float: left;}
      #nav ul li:hover { background-position: 50% 100%; background-color: rgba(0, 0, 0, 0.2); }
@@ -112,7 +112,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
       .pl #nav ul li.blog a { width: 67px; background-position: -236px 0; } .pl #nav li.blog a:hover { background-position: -236px -37px; } .pl #nav li.blog a.active { background-position: -236px -74px !important; }
       .pl #nav ul li.clients a { width: 81px; background-position: -303px 0; } .pl #nav li.clients a:hover { background-position: -303px -37px; } .pl #nav li.clients a.active { background-position: -303px -74px !important; }
       .pl #nav ul li.contact a { width: 85px; background-position: -384px 0; } .pl #nav li.contact a:hover { background-position: -384px -37px; } .pl #nav li.contact a.active { background-position: -384px -74px !important; }
-   #look { position: absolute; left: 160px; top: 100px; width: 450px; padding: 8px 13px 0 0; color: #735d53; }
+   #look { position: absolute; left: 160px; top: 70px; width: 450px; padding: 8px 13px 0 0; color: #735d53; }
     #look h2 { margin: 0 0 5px; }
      #look h2.cms a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/vashka-manager.png) no-repeat; text-indent: -10001em; }
      #look h2.work a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/work-pl.png) no-repeat; text-indent: -10001em; }
@@ -156,7 +156,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
     #introduction-a div.column p.more { position: absolute; bottom: 0; margin: 0; font-size: 1em; line-height: 2.5em; }
      #introduction-a div.column p.more a { float: left; padding: 0 15px 0 20px; background: #040404 url(../images/bullet-b.gif) 10px 50% no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
      #introduction-a div.column p.more a:hover { background-color: #000; color: #fff; }
-  #content { overflow: hidden; width: 934px; margin: 0 auto; padding: 9px 16px 10px 0; }
+  #content { overflow: hidden; width: 934px; margin: 0 auto; padding: 9px 16px 10px 0;}
    #side { float: left; width: 268px; padding: 157px 0 0 16px; }
     #subnav { position: relative; top: -157px; list-style: none; margin: 0 0 -157px -16px; width: 245px; padding: 35px 0 30px 20px; min-height: 80px; }
      #subnav li { width: 245px; line-height: 1em; }
@@ -242,8 +242,8 @@ blockquote { margin: 0 0 0 10px; padding: 0 20px; border-left: 3px solid #ab8472
 
 ul { margin-left: 0; margin-right: 0; padding: 0 0 0 20px; }
 
-ul.a { list-style: none; margin-left: 0; margin-right: 0; padding: 0; }
- ul.a li { padding: 0 0 0 20px; background: url(../images/bullet-e.gif) 6px 5px no-repeat; }
+ul.a { margin-left: 0; margin-right: 0; padding: 0; }
+ ul.a li { padding: 0 0 0 5px; background: url(../images/bullet-e.gif) 6px 5px no-repeat; }
 
 ul.b { list-style: none; margin-left: 0; margin-right: 0; padding: 0; background: url(../images/bullet-gb.gif) 500px 0 no-repeat; }
  ul.b li { border-top: 1px solid #e8e8e8; }
@@ -500,9 +500,9 @@ ul.clients { overflow: hidden; list-style: none; width: 100%; margin: 0 0 15px; 
   ul.clients li img { display: block; margin: 0 auto; }
   
 /* jobs */
-#job { padding: 40px 39px 0; background: url(../images/jobs-top.jpg) 0 0 no-repeat; line-height: 2em; }
+#job { padding: 10px 15px 0; background: url(../images/jobs-top.jpg) 0 0 no-repeat; line-height: 2em; }
   #job .paper { margin: 0 -39px 20px; padding: 0 39px 50px; background: url(../images/jobs-bottom.jpg) 50% 100% no-repeat; }
-  #job ul.a li { padding-left: 30px; background-position: 6px 9px; }
+  #job ul.a li { background-position: 6px 9px; }
 
 	
 /* CODE VIEW
@@ -584,11 +584,15 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 /* HOME FEATURE
 --------------------------------------------- */
 
-#feature2, #feature3, #ardoise_naturelle {
+#feature2, #feature3, #ardoise_naturelle, #celullose, #bardeaux, #produits_types {
   display:none;
 }
 
-#main img {
-  width: 140px;
+.little-image-righted {
+  height: 140px;
   padding: 8px;
+}
+
+.content-height {
+  height: 100%;
 }

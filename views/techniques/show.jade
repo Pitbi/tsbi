@@ -1,10 +1,12 @@
 include ../layouts/application
-	#content
+	#content.content-height
 		#side
 				h2.offset Secondary navigation
 				ul#subnav
 					li.first
-						a.active(href='#celullose') La celullose
+						a.active(href="#sarking") Le sarking
+					li
+						a(href='#celullose') La celullose
 					li
 						a(href='#ardoise_naturelle') Ardoise naturelle
 					li
@@ -24,15 +26,28 @@ include ../layouts/application
 								a(href='#4d') 4D
 
 			#main
+				#sarking
+					p#breadcrumbs
+					h1 Le sarking
+					#job
+						h2 Le sarking est un procédé permettant d’isoler en continu par l’extérieur la toiture.
+						p Il se compose de différentes couches successives (de bas en haut):
+						p(style="text-align: center;")
+							img(src="images/tsbi_sark.jpg", style="width: 50%;")
+						h2 Comme principaux avantages a ce procédé, on peut énumérer:
+						ul.a
+							li moins de ponts thermiques, lors de la mise en place de l'isolation entre les chevrons: chaque chevron forme en fait un pont thermique par la moins bonne valeur d'isolation du bois.
+							li protection supplémentaire du bois de la toiture, qui se trouve d'ailleurs entièrement sous l'isolation.
+							li pas de perte de place du côté intérieur
+							li très intéressant pour les rénovations : la finition intérieure ne doit pas être enlevée.
 				#celullose
 					p#breadcrumbs
 					h1 La celullose
-					img(src="images/cellulose.jpg", style="float: right;")
+					img.little-image-righted(src="images/cellulose.jpg", style="float: right;")
 					#job
 						h2 L’isolation insufflée:
 						ul.paper.a
 							li L’isolation insufflée est sans conteste la technique d’isolation qui offre le meilleur rapport qualité/prix dans les isolants naturels.
-							br
 							li En effet, cette technique a un coût (main-d’oeuvre + matériau), équivalent au coût uniquement matériau des techniques alternatives.
 						h2 Les différents produits insufflés sont:
 						ul.a
@@ -45,11 +60,40 @@ include ../layouts/application
 					#job
 						h2 L’ardoise naturelle offre beaucoup d’avantages. Outre l’aspect anecdotique de vivre sous un toit de pierre, voici quelques avantages:
 						ul.paper.a
-							li L’isolation insufflée est sans conteste la technique d’isolation qui offre le meilleur rapport qualité/prix dans les isolants naturels.
-							br
-							li En effet, cette technique a un coût (main-d’oeuvre + matériau), équivalent au coût uniquement matériau des techniques alternatives.
-						h2 Les différents produits insufflés sont:
+							li Une très longue durée de vie (plus de 100 ans, contre environ 50 ans pour la tuile terre cuite classique, l’ardoise artificielle, voire moins encore pour d’autres matériaux de couverture);
+							li Une esthétique unique qui perdure jusqu’à la fin de ses jours;
+							li Un bilan carbone à la production nettement inférieur aux autres type de matériaux de couverture;
+							li Un prix matériau légèrement supérieur à la tuile (très proche pour le format économique) et dont le temps de mise en œuvre, quoique supérieur, est largement rentabilisé au vu de sa durée de vie;
+						h2 Nous proposons deux familles de format:
 						ul.a
-							li Thermofloc (cellulose)
-							li Fibre de bois
-							li Etc...
+
+							li Le format rectangulaire, dit traditionnel;
+							br
+							img.little-image-righted(src="images/tsbi_ardoise1.jpg")
+							li Le format « carré sur pointe » (30cm x 30cm), dit économique. En effet, ce dernier est imbattable pour son rapport duré de vie/prix.
+							br
+							img.little-image-righted(src="images/tsbi_ardoise2.jpg")
+
+				#bardeaux
+					p#breadcrumbs
+					h1 Les bardeaux en bois
+					#job
+						h2 Le bardeau de bois, également appelé shingles ou shakes, selon les zones géographiques et le type de pose, est une couverture très esthétique et chaleureuse. 
+						p
+							| Le cèdre, le mélèze et le châtaigner sont les essences les plus utilisée par chez nous pour la manufacture bardeaux. 
+							br
+							| Ce sont en effet, les bois qui résistent le mieux dans le temps aux intempéries (bois imputrescibles).
+							br
+							| Une couverture en bardeau se pose comme une couverture type ardoise naturelle, mais en version couverture brouillée (chaque bardeau possède une largeur significativement différente et une longueur légèrement différente).
+
+						p
+							| Ce type de couverture est encore beaucoup utilisé dans des régions typiques en Europe et dans le monde, comme en France, Suisse ou Canada et USA. Il faut dire que cette couverture dure 40-50ans et ne requièrt pas de matériaux produis par l'industrie, si ce n'est ses clous de fixation. 
+							br
+							| Notons également que les toits d'Europe jusqu'au 19ème siècles étaient majoritairement faits en bois.
+						
+						p
+							| De nos jours en Belgique nous proposons ce type de couverture pour des abris de jardin ou de petites annexes. Rarement pour les toitures principales de vos maisons car l’urbanisme de nos communes n'est pas favorable à ce type d'esthétisme, qui ferait pour eux, sans doute tache, dans le décor de nos toitures de type tuiles ou ardoise. 
+							br
+							| Mais les mentalités changent et d'ici quelques années, avec un peu d'argumentation et un retour vers l'utilisation de matériaux durables et naturels, nous reverrons sans doute de plus en plus de couvertures principales de ce type.
+
+

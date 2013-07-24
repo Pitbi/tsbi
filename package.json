@@ -1,7 +1,7 @@
 {
   "subdomain": "TSBI",
   "name": "TSBI",
-  "version": "0.0.0-5",
+  "version": "0.0.0-6",
   "description": "TSBI Construct. ",
   "main": "index.js",
   "dependencies": {
