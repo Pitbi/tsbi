@@ -1,0 +1,85 @@
+include ../layouts/application
+
+  #content
+      #main(style="width:840px; padding-top:12px; padding-bottom: 12px;")
+        h1 Contact
+        .toolbox
+          h2
+            span Partenaire
+          ul.c
+            li.first
+              a(href='./') Webmaster
+            li
+              a(href='./') Plomberie
+        #contact-details.vcard
+          p
+            strong
+              a.fn.org.url(href='./') TSBI Construct
+
+            br
+            em.adr
+              span.street-address rue adjudant Kumps 46A, 
+              span.locality 1495 Mellery, 
+              span.country-name Belgique 
+          p
+            | tel:
+            span.tel  +32 (0) 488 43 93 50
+
+            br
+            | e-mail général: 
+            a.email(href='mailto:info@tsbi.be') info@tsbi.be
+          p
+            
+        p(style="text-align: center;")
+          iframe(width='800', height='350', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=fr&geocode=&q=RUE+ADJUDANT+KUMPS,+46A+1495,+MELLERY-+BELGIQUE&aq=&sll=37.0625,-95.677068&sspn=40.59616,92.636719&ie=UTF8&hq=&hnear=Rue+Adjudant+Kumps+46,+Mellery+1495+Villers-la-Ville,+Brabant+Wallon,+R%C3%A9gion+wallonne,+Belgique&t=m&ll=50.590539,4.568939&spn=0.019072,0.036564&z=14&output=embed&amp;iwloc=off')
+          br
+            small
+              a(href='https://maps.google.com/maps?f=q&source=embed&hl=fr&geocode=&q=RUE+ADJUDANT+KUMPS,+46A+1495,+MELLERY-+BELGIQUE&aq=&sll=37.0625,-95.677068&sspn=40.59616,92.636719&ie=UTF8&hq=&hnear=Rue+Adjudant+Kumps+46,+Mellery+1495+Villers-la-Ville,+Brabant+Wallon,+R%C3%A9gion+wallonne,+Belgique&t=m&ll=50.590539,4.568939&spn=0.019072,0.036564&z=14', style='color: #0000FF; text-align: left;') Agrandir le plan
+
+        //-#contact-directions
+          h2 Jak nas znaleźć?
+          p Skorzystaj z wyszukiwarki, aby zobaczyć jak dojechać do naszej siedziby.
+          form(method='post', action='./')
+            p
+              label(for='f-address')
+                | Skąd?
+                span np. Wilcza, Warszawa
+              input#f-address(type='text', name='address')
+              button(type='submit') Get Directions
+          #map
+        #contact-form
+          h2 Contactez nous!
+          form(method='post', action='/contact')
+            fieldset.first
+              legend.offset Vos informations
+              .column.first(style="border-right: 1px solid #634737; padding-right: 15px;")
+                p
+                  label(for='f-name') Nom & prénom: 
+                  input#f-name(type='text', name='name')
+                p
+                  label(for='f-company')
+                    | Société: 
+                    span (facultatif)
+                  input#f-company(type='text', name='company')
+                p
+                  label(for='f-phone') Téléphone: 
+                    span (facultatif)
+                  input#f-phone(type='text', name='phone')
+                p
+                  label(for='f-email')
+                    | Email: 
+                  input#f-email(type='text', name='email')
+                p
+                  label(for='f-subject')
+                    | Sujet: 
+                    span (facultatif)
+                  input#f-subject(type='text', name='subject')
+              .column.second
+                p
+                  label(for='f-message')
+                    | Votre message:
+                  textarea#f-message(name='message', rows='5', cols='40', style="resize:none; width: 500px; height:220px;")
+            
+            .submit
+              button(type='submit')
+                span Envoyer

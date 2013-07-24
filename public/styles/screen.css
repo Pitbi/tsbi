@@ -292,7 +292,7 @@ p.button-b { overflow: hidden; width: 100%; margin: 0; font-size: 1em; line-heig
  
 div.toolbox { display: inline; float: right; width: 180px; margin: 0 0 5px 10px; padding: 10px 20px; border: 1px solid #e2e2e2; }
  div.toolbox h2 { position: relative; top: -20px; left: -10px; margin: 0 0 -10px; color: #040404; font-size: 1.3em; font-weight: bold; }
-  div.toolbox h2 span { padding: 2px 9px; border: 1px solid #e2e2e2; background: #fff; text-transform: lowercase; }
+  div.toolbox h2 span { padding: 2px 9px; border: 1px solid #e2e2e2; background: #fff; }
  div.toolbox ul.c { margin: 0; }
  
 dl.search { margin: 0 0 30px; padding: 0 0 0 25px; }
@@ -388,8 +388,8 @@ img.messenger { vertical-align:middle; }
 #contact-form { }
  #contact-form form { }
   #contact-form form fieldset.first { overflow: hidden; width: 100%; margin: 0 0 1px; padding: 10px 0 13px; background: #e1dbce; }
-   #contact-form form fieldset.first div.column { display: inline; float: left; width: 265px; margin-left: 15px; }
-   #contact-form form fieldset.first div.second { float: right; margin-left: 0; margin-right: 15px; }
+   #contact-form form fieldset.first div.column { display: inline; float: left; width: 265px; margin-left: 15px;}
+   #contact-form form fieldset.first div.second { margin-left: 15px; margin-right: 15px; }
     #contact-form form fieldset.first div p { margin: 0 0 7px; }
     #contact-form form fieldset.first div p.checkbox { }
      #contact-form form fieldset.first div p label,
