@@ -3,6 +3,16 @@ $(function () {
 	var url = window.location.pathname;
 	if (url != "/") {
 		$("#wrapper").css("height", "100%");
+	} else {
+			var homeCarouselTimer = 0;
+			setInterval(function(){
+				if (homeCarouselTimer >= 15) {
+					switchToNextFeature();
+					homeCarouselTimer = 0;
+				} else {
+					homeCarouselTimer = homeCarouselTimer + 1;
+				}
+			},1000)
 	}
 	$("#subnav li a").click(function () {
 		$('#subnav li a').each(function(){
@@ -23,10 +33,12 @@ $(function () {
 
 	var featureIndex = 1;
 	$(".nextFeature").click(function () {
+					homeCarouselTimer = 0;
 		switchToNextFeature();
 	});
 
 	$(".previousFeature").click(function () {
+					homeCarouselTimer = 0;
 		var currentFeature = "#feature" + featureIndex;
 		featureIndex = featureIndex - 1;
 		var nextFeature =  "#feature" + (featureIndex);
@@ -40,9 +52,7 @@ $(function () {
 		}
 	});
 	
-	setInterval(function(){
-		switchToNextFeature();
-	},12000)
+
 
 	var switchToNextFeature = function () {
 		var currentFeature = "#feature" + featureIndex;

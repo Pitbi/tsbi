@@ -1,9 +1,4 @@
-/* -------------------------------------------
-project:	Merix Studio
-date:		2007/11/05
-------------------------------------------- */
-
-html { min-height: 100%; margin-bottom: 1px; background: #fff; font-size: 100.01%; }
+html { min-height: 100%; margin-bottom: 1px; background: rgba(252, 250, 225, 0.3); font-size: 100.01%; }
 body { margin: 0; padding: 1px 0 0; color: #555; font: 62.5%/1.5 'Open Sans',Arial,Helvetica,sans-serif;}
 textarea, input, select, option, button{ font: 1em Arial,Helvetica,sans-serif; }
 
@@ -46,7 +41,7 @@ legend.offset { display: none; }
 
 /* LAYOUT
 ------------------------------------------- */
-#wrapper { margin: -1px 0 0; padding: 0 0 8px 1px; position: relative; background-color: rgba(252, 250, 225, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
+#wrapper { margin: -1px 0 0; padding: 0 0 8px 1px; position: relative;}
 .home #wrapper { background: #19110d url(../images/bg-home.png) repeat-x; }
  #wrapper div.wrapper-inner { position: relative; width: 100%;}
   #top { position: relative; width: 950px; height: 115px; margin: 0 auto; z-index: 250; }
@@ -138,7 +133,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
       #featured ul.tabs li a span { cursor: pointer; }
       #featured ul.tabs li a:hover span { background-position: 100% -26px; }
       #featured ul.tabs li strong span { background-position: 100% -52px !important; }
-   #featured ul.controls { position: absolute; left: 0; top: 250px; list-style: none; margin: 0; padding: 0; }
+   #featured ul.controls { position: absolute; top: 250px; list-style: none; margin: 0; padding: 0; }
     #featured ul.controls li { display: inline; float: left; margin: 0 1px 0 0; }
      #featured ul.controls li a { overflow: hidden; float: left; width: 30px; height: 30px; }
      #featured ul.controls li span { float: left; width: 30px; height: 30px;}
@@ -171,13 +166,13 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
         #subnav li li a:hover { background: url(../images/bullet-gb.gif) 100% 9px no-repeat; color: #885a44; }
    .single #main { float: none; width: auto; margin: 0 0 0 16px; padding: 0 0 0 35px; background: #fff; }
    #main { float: right; width: 576px; padding: 0 22px 0 50px; background: #fff; min-height: 200px; border: 1px solid rgba(0, 0, 0, 0.2);}
-    #breadcrumbs { position: relative; margin: 0 0 25px -20px; padding: 16px 0 14px; background: url(../images/sep-c.gif) 0 100% repeat-x; color: #888; font-size: 1em; text-transform: uppercase; }
+    #breadcrumbs { position: relative; background: url(../images/sep-c.gif) 0 100% repeat-x; color: #888; font-size: 1em; text-transform: uppercase; }
     .single #breadcrumbs { margin: 0 0 25px -35px; padding-left: 20px; border-bottom: 1px solid #e5e5e5; background: none; color: #888; font-size: 1em; text-transform: uppercase; }
      #breadcrumbs a { padding: 0 2px; color: #888; text-decoration: none; }
      #breadcrumbs a:hover { text-decoration: underline; }
      #breadcrumbs a.home { padding: 0 0 0 20px; background: url(../images/icons-guy.gif) 2px 20% no-repeat; }
      #breadcrumbs strong { padding: 0 2px; color: #3b5e73; }
-#outer-wrapper { background: #fff; }
+#outer-wrapper { background: #fff;  border-top: 1px solid rgba(0, 0, 0, 0.3); }
  #introduction-b { overflow: hidden; width: 950px; margin: 0 auto; padding: 30px 0 10px; background: url(../images/sep-b.gif) 50% 0 repeat-y; }
   #introduction-b div.column { float: left; width: 420px; padding: 0 15px 0 40px; }
    #introduction-b div.column h2 { color: #000; font-size: 2.2em;}
@@ -421,7 +416,7 @@ p.error select { border: 1px solid #BE2525 !important; }
 p.error strong { display: block; padding: 0 0 0 17px; color: #BE2525; background: url(../images/error.png) 2px 50% no-repeat; margin: 2px 0; }
 
 /* work */
-#work-project { position: relative; min-height: 360px; margin: -25px 0 30px 0; padding: 25px 500px 0 0; }
+#work-project { position: relative; margin: -25px 0 30px 0; padding: 25px 0 0 0; }
 * html #work-project { height: 360px; }
  #work-project h1 { margin: 0 0 1px; }
  #work-project p { margin: 0 0 7px; }
@@ -596,3 +591,9 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 .content-height {
   height: 100%;
 }
+
+#work-project-pictures {
+  margin-bottom: 12px;
+}
+
+

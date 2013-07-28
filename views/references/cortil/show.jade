@@ -1,11 +1,9 @@
 include ../../layouts/application
   
     #content.single
-      #main(style="width:840px; padding-top:12px; padding-bottom: 12px;")
+      #main(style="padding-top:12px; padding-bottom: 12px;")
           #work-project
-            .screens
-              embed(type='application/x-shockwave-flash', src='https://picasaweb.google.com/s/c/bin/slideshow.swf', width='400', height='317', flashvars='host=picasaweb.google.com&hl=fr&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F102537520770797390310%2Falbumid%2F5830001051452708897%3Falt%3Drss%26kind%3Dphoto%26hl%3Dfr', pluginspage='http://www.macromedia.com/go/getflashplayer')
-
+              
             h1 Cortil
             p.date Janvier 2013
             p
@@ -19,6 +17,9 @@ include ../../layouts/application
               p.button-b
                 a(href='./')
                   span Visit Website
+          #work-project-pictures
+            embed(type='application/x-shockwave-flash', src='https://picasaweb.google.com/s/c/bin/slideshow.swf', width='840', height='317', flashvars='host=picasaweb.google.com&hl=fr&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F102537520770797390310%2Falbumid%2F5830001051452708897%3Falt%3Drss%26kind%3Dphoto%26hl%3Dfr', pluginspage='http://www.macromedia.com/go/getflashplayer')
+
           #work-projects
 
             ul.d.first
