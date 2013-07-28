@@ -430,7 +430,7 @@ p.error strong { display: block; padding: 0 0 0 17px; color: #BE2525; background
   #work-project p.status span { padding: 0 2px; }
  #work-project div.buttons { overflow: hidden; width: 100%; }
   #work-project div.buttons p { display: inline; float: left; width: auto; margin: 0 2px 0 0; }
- #work-project div.screens { position: absolute; right: -16px; top: 0; width: 483px; border-right: 16px solid #040404; }
+ #work-project div.screens { position: absolute; right: -60px; width: 483px; }
  * html #work-project div.screens { right: -17px; }
   #work-project div.screens div.pic { position: relative; overflow: hidden; width: 482px; height: 317px; padding: 0 0 0 1px; border-bottom: 7px solid #000; background: url(../images/sep-b.gif) repeat-y; }
    #work-project div.screens div.pic p { position: relative; z-index: 10; margin: 0; }

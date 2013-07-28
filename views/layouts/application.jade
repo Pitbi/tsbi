@@ -8,10 +8,11 @@ html
 		meta(name='description', content='')
 		//-link(href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800', rel='stylesheet', type='text/css')  
 		link(rel='Shortcut Icon', href='/favicon.ico', type='image/x-icon')
-		link(rel='stylesheet', type='text/css', href='styles/screen.css', media='all')
-		link(rel='stylesheet', type='text/css', href='styles/print.css', media='print')
-		link(rel='stylesheet', type='text/css', href='styles/font-awesome.min.css', media='all')
+		link(rel='stylesheet', type='text/css', href='/styles/screen.css', media='all')
+		link(rel='stylesheet', type='text/css', href='/styles/print.css', media='print')
+		link(rel='stylesheet', type='text/css', href='/styles/font-awesome.min.css', media='all')
 		script(type="text/javascript", src='/js/handlebars.js')
+		script(type="text/javascript", src='/js/html5shiv.js')
 		script(type="text/javascript", src="http://code.jquery.com/jquery-1.9.0.js")
 		//-script(type="text/javascript", src="/js/scripts.js")
 		script(type="text/javascript", src="/js/tsbi.js")
@@ -23,7 +24,7 @@ html
 					#top
 						#logo
 							a(href='./')
-								img(src='images/logo.png', alt='TSBI', title='TSBI Construct', height='93')
+								img(src='/images/logo.png', alt='TSBI', title='TSBI Construct', height='93')
 						
 						#nav
 							h2.offset Navigation
@@ -35,14 +36,14 @@ html
 									a(href='/techniques', accesskey='1')
 										| Techniques
 								li
-									a(href='./', accesskey='2')
+									a(href='/references', accesskey='2')
 										| Références
 								li
 									a(href='/contact', accesskey='3')
 										| Contact
 						#look
 							p
-								span Située à Mellery, dans le Brabant Wallon, Tsbi Construct est spécialisée dans la rénovation écologique de votre toiture & de votre maison.
+								//-span Située à Mellery, dans le Brabant Wallon, Tsbi Construct est spécialisée dans la rénovation écologique de votre toiture & de votre maison.
 
 				block content
 
