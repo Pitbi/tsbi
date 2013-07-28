@@ -388,7 +388,7 @@ img.messenger { vertical-align:middle; }
     #contact-form form fieldset.first div p { margin: 0 0 7px; }
     #contact-form form fieldset.first div p.checkbox { }
      #contact-form form fieldset.first div p label,
-     #contact-form form fieldset.first div p span.label { display: block; margin: 0 0 2px; padding: 0 0 0 5px; color: #634737; font-weight: bold; }
+     #contact-form form fieldset.first div p span.label { display: block; margin: 0 0 2px; padding: 0 0 0 5px; font-weight: normal; }
      #contact-form form fieldset.first div p.checkbox label { display: inline; margin: 0; padding: 0 0 0 5px; color: #634737; font-weight: normal; }
       #contact-form form fieldset.first div p label span { color: #80796a; font-weight: normal; }
      #contact-form form fieldset.first div p input { width: 250px; padding: 3px 5px; vertical-align: middle; }
@@ -597,3 +597,32 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 }
 
 
+
+.errors {
+  color: #b94a48;
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #f2dede;
+  border: 1px solid #eed3d7;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+input.error, textarea.error {
+   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #f2dede;
+  border: 1px solid #eed3d7;
+ 
+}
+
+label.error {
+  color: #b94a48;
+  font-weight: normal;
+}
+
+.unstyled {
+  list-style-type: none;
+}
+}

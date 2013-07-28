@@ -1,6 +1,6 @@
 include ../layouts/application
 	#content.content-height
-		#side(style="width: 208px;")
+		#side(style="width: 160px;")
 				h2.offset Secondary navigation
 				ul#subnav
 					li.first
@@ -12,10 +12,10 @@ include ../layouts/application
 					li
 						a(href='#bardeaux') Les bardeaux
 					li
-						a(href='#produits_types') Produits types
+						a.sub-sub-nav(href='#steico_protect') Produits types
 						ul
 							li.first
-								a(href='#steico_protect') Steico Protect
+								a.sub-sub-nav-first(href='#steico_protect') Steico Protect
 							li
 								a(href='#steico_flex') Steico Flex
 							li
@@ -25,7 +25,7 @@ include ../layouts/application
 							li
 								a(href='#4d') 4D
 
-			#main(style="width:636px")
+			#main(style="width:684px")
 				#sarking
 					p#breadcrumbs
 					h1 Le sarking
@@ -65,7 +65,7 @@ include ../layouts/application
 							li Un bilan carbone à la production nettement inférieur aux autres type de matériaux de couverture;
 							li Un prix matériau légèrement supérieur à la tuile (très proche pour le format économique) et dont le temps de mise en œuvre, quoique supérieur, est largement rentabilisé au vu de sa durée de vie;
 						h2 Nous proposons deux familles de format:
-						ul.a
+						ul.a.unstyled
 
 							li Le format rectangulaire, dit traditionnel;
 							br
@@ -95,5 +95,22 @@ include ../layouts/application
 							| De nos jours en Belgique nous proposons ce type de couverture pour des abris de jardin ou de petites annexes. Rarement pour les toitures principales de vos maisons car l’urbanisme de nos communes n'est pas favorable à ce type d'esthétisme, qui ferait pour eux, sans doute tache, dans le décor de nos toitures de type tuiles ou ardoise. 
 							br
 							| Mais les mentalités changent et d'ici quelques années, avec un peu d'argumentation et un retour vers l'utilisation de matériaux durables et naturels, nous reverrons sans doute de plus en plus de couvertures principales de ce type.
-
-
+				#steico_protect
+					p#breadcrumbs
+					h1 Steico Protect
+					#job
+						h2
+							img.little-image-righted(src="images/tsbi_steico_protect.jpg", style="float: right;")
+						ul.paper.a.unstyled
+							li Panneaux isolants pour enduits selon homologation par les fabricants d‘enduits.
+							li Panneaux isolants pour enduits muraux intérieurs et extérieurs.
+						h2 Caractéristiques
+						ul.paper.a
+							li Panneaux constitutifs de parois respirantes
+							li Haute stabilité dimensionnelle
+							li Haute performance isolante, tant en hiver qu‘en été
+							li Longue expérience du produit
+							li Panneau isolant conforme aux normes en vigueur
+							li Excellent rapport qualité prix du système panneaux / enduits
+							li Mise en oeuvre simple et économique
+							li Système constructif testé au feu

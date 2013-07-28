@@ -15,14 +15,26 @@ $(function () {
 			},1000)
 	}
 	$("#subnav li a").click(function () {
+		var parent = $(this).parent().parent().parent();
+
 		$('#subnav li a').each(function(){
-    	$(this).removeClass('active');
+  	$(this).removeClass('active');
     	var pageId = $(this).attr("href");
     	$(pageId).css("display", "none");
 		});
 		$(this).addClass("active");
     var pageId = $(this).attr("href");
     $(pageId).css("display", "block");
+		if(parent.is("li")) {
+			var parentA = $(parent).children("a");
+			parentA.addClass('active');
+		}
+	});
+
+	$(".sub-sub-nav").click(function () {
+		var firstChild = $(this).siblings("ul");
+		var firstChildA = $(firstChild).children("li").children("a.sub-sub-nav-first");
+		$(firstChildA).addClass("active");
 	});
 
 	$('#nav li a').each(function(){

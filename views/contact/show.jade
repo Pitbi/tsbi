@@ -52,7 +52,10 @@ include ../layouts/application
           #map
         #contact-form
           h2 Contactez nous!
-          form(method='post', action='/contact')
+          - if (contactError)
+            .errors
+              | #{contactError}
+          form#contact(method='post', action='/contact')
             fieldset.first
               legend.offset Vos informations
               .column.first(style="border-right: 1px solid #634737; padding-right: 15px;")

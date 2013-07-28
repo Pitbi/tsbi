@@ -11,15 +11,18 @@ var ContactController = function(req, res, next) {
 ContactController.prototype.GET = function () {
   var self= this;
 
-  self.res.render("contact/show");
+  self.res.render("contact/show", {contactError: null});
 };
 
 ContactController.prototype.POST = function () {
   var self= this;
   var attributes = self.req.body;
-  console.log(attributes);
+  var contactError = "Une erreure s'est produite lors de l'envoie de votre mail. Vérifiez que vous vous avez bien entrer votre nom nom, adresse email ainsi qu'une message."
   sendOfferByMail(attributes, function (err) {
-  	if (err) throw err;
+    console.log("err", err);
+  	if (err) {
+      self.res.render("contact/show", {contactError: contactError});
+    }
 
   	
   	self.res.redirect("back");
