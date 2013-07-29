@@ -579,7 +579,7 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 /* HOME FEATURE
 --------------------------------------------- */
 
-#feature2, #feature3, #ardoise_naturelle, #celullose, #bardeaux, #produits_types {
+#feature2, #feature3, #ardoise_naturelle, #celullose, #bardeaux, #produits_types, #steico_flex, #steico_protect, #steico_therm, #steico_floor, #celite {
   display:none;
 }
 
@@ -625,4 +625,7 @@ label.error {
 .unstyled {
   list-style-type: none;
 }
+
+.text-centered {
+  text-align: center;
 }
