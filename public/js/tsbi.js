@@ -1,6 +1,35 @@
 $(function () {
-
+	var d=300;
 	var url = window.location.pathname;
+    $('#navigation a').each(function(){
+        var $this = $(this);
+        var r=Math.floor(Math.random()*41)-20;
+
+    		if(url !== $(this).attr("href")){
+	        $this.stop().animate({
+	            'marginTop':'-70px'
+	        },d+=150);
+	      }
+    });
+    $('#navigation > li').hover(
+
+      
+        function () {
+            var $this = $(this);
+            $('a',$this).stop().animate({
+                'marginTop':'-40px'
+            },200);
+        },
+        function () {
+        	if(url !== $(this).children().attr("href")) {
+            var $this = $(this);
+	            $('a',$this).stop().animate({
+	                'marginTop':'-70px'
+	            },200);
+	        }
+      }
+    );
+
 	if (url != "/") {
 		$("#wrapper").css("height", "100%");
 	} else {
@@ -37,20 +66,15 @@ $(function () {
 		$(firstChildA).addClass("active");
 	});
 
-	$('#nav li a').each(function(){
-    if(url === ($(this).attr("href"))){
-      $(this).addClass('active');
-    }
-	});
 
 	var featureIndex = 1;
 	$(".nextFeature").click(function () {
-					homeCarouselTimer = 0;
+		homeCarouselTimer = 0;
 		switchToNextFeature();
 	});
 
 	$(".previousFeature").click(function () {
-					homeCarouselTimer = 0;
+		homeCarouselTimer = 0;
 		var currentFeature = "#feature" + featureIndex;
 		featureIndex = featureIndex - 1;
 		var nextFeature =  "#feature" + (featureIndex);
@@ -59,8 +83,8 @@ $(function () {
 		if ($(nextFeature).is("div")) {
 			$(nextFeature).css("display", "block");	
 		} else {
-			featureIndex = 3;
-			$("#feature3").css("display", "block");
+			featureIndex = 4;
+			$("#feature4").css("display", "block");
 		}
 	});
 	

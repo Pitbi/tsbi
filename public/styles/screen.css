@@ -21,7 +21,7 @@ a:hover, a:focus, a:active { text-decoration: none; }
 
 /* HEADINGS
 ------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { margin: 0 0 12px; font: normal 2.4em Arial,Helvetica,sans-serif; color: #634737; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 12px; color: #634737; }
 h1 { font-size: 2.2em; }
 h1 a, h2 a { text-decoration: none; }
 h1 a:hover, h2 a:hover { text-decoration: underline; }
@@ -41,16 +41,16 @@ legend.offset { display: none; }
 
 /* LAYOUT
 ------------------------------------------- */
-#wrapper { margin: -1px 0 0; padding: 0 0 20px 1px; position: relative;}
-.home #wrapper { background: #19110d url(../images/bg-home.png) repeat-x; }
+#wrapper { margin: -1px 0 0; padding: 0 0 20px 1px; position: relative; background: #574c2b; background-image: url("../images/zenbg-1.png"), url("../images/zenbg-2.png"); background-repeat: repeat-x, repeat; }
+.home #wrapper { }
  #wrapper div.wrapper-inner { position: relative; width: 100%;}
-  #top { position: relative; width: 950px; height: 115px; margin: 0 auto; z-index: 250; }
+  #top { position: relative; width: 950px; height: 115px; margin: 0 auto; z-index: 250; padding-bottom: 8px; }
   #top.short { height: 125px; }
-   #logo { position: absolute; top: 15px; margin: 0; }
-    #logo a {overflow: hidden; width: 224px; height: 65px; background: url(../images/logo-dark.png) no-repeat; text-indent: -10001px; }
+   #logo { position: absolute; top: 15px; margin: 0; border-radius: 4px;}
+    #logo a {overflow: hidden; width: 224px; height: 65px;  text-indent: -10001px; }
     .pl #logo a {}
      #logo a img {}
-		 
+#logo span {font-size: 18px; margin: 0 0 15px 4px; color: black;}
 a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; background: url(../images/yahoo.png) 0 -10px no-repeat ; text-indent: -9999em; text-decoration: none; }		 
    #search-form { position: absolute; right: 0; top: 50px; width: 315px; height: 62px; padding: 8px 0 0; }
     #search-form fieldset { margin: 0; padding: 0 0 0 20px; }
@@ -85,10 +85,10 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #tools li a.off:hover { background-position: 0 -71px; }
      #tools li a.on { background-position: 0 4px; }
      #tools li a.on:hover { background-position: 0 -21px; }
-   #nav { position: absolute; left: 0; top: 80px; width: 100%;}
+   #nav { position: absolute; left: 0; top: 0px; width: 100%;}
     #nav ul { float: right; list-style: none; height: 20px; margin: 0; padding: 0; }
      #nav ul li { float: left;}
-     #nav ul li:hover { background-position: 50% 100%; background-color: rgba(0, 0, 0, 0.1); }
+     #nav ul li:hover { background-position: 50% 100%; background-color: rgba(0, 0, 0, 0); }
      #nav ul li.home { border-left: none; }
       #nav ul li em { display: none; }
       #nav ul li a { float: left; overflow: hidden; height: 24px; padding: 0 8px; font-size: 16px;}
@@ -113,7 +113,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #look h2.work a { display: block; overflow: hidden; height: 20px; background: url(../images/headers/work-pl.png) no-repeat; text-indent: -10001em; }
     #look p { font-size: 1.1em; line-height: 1.27em; }
      #look p a { color: #735d53; text-decoration: none; }
-  #featured { position: relative; width: 418px; height: 270px; margin: 0 auto;  padding: 0 0 0 500px; background: rgba(0, 0, 0, 1) url(../images/bg-featured.png) 100% 0 repeat-y; border: 1px solid; border-color:  rgba(0, 0, 0, 0.6); border-width: 8px 16px 8px; color: #838685; }
+  #featured { position: relative; width: 418px; height: 270px; margin: 0 auto;  padding: 0 0 0 500px; background: rgba(0, 0, 0, 0.5); border: 1px solid; border-color: transparent; border-width: 12px 16px 12px; color: #838685; }
    #featured h1 { margin: 35px 0 2px; color: #fff; font-size: 1.8em;}
     #featured h1 span { color: #a8b934; }
    #featured p.image { position: absolute; left: 0; top: 0; }
@@ -127,7 +127,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
     #featured ul.tabs li { display: inline; float: left; margin: 0 3px 0 0; font-size: 1em; line-height: 28px; text-transform: uppercase; }
     #featured ul.tabs li.visit { float: right; margin: 0; }
      #featured ul.tabs li a { float: left; padding: 0 0 0 2px; background: url(../images/tabs.png); color: #fff; text-decoration: none; }
-     #featured ul.tabs li a:hover { background-position: 0 -26px; }
+     #featured ul.tabs li a:hover { background-position: 0 -26px; background-color: rgba(0,0,0, 0.2); color: #A2A6A5;}
      #featured ul.tabs li strong { float: left; padding: 0 0 0 2px; background: url(../images/tabs.png) 0 -52px; color: #fff; }
       #featured ul.tabs li span { position: relative; overflow: hidden; float: left; height: 26px; margin: 0 -2px 0 0; padding: 0 15px 0 13px; background: url(../images/tabs.png) 100% 0 no-repeat; }
       #featured ul.tabs li a span { cursor: pointer; }
@@ -142,16 +142,18 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #featured ul.controls li.prev a:hover { background-position: 0 -120px; }
      #featured ul.controls li.prev span { background-position: 0 -150px; }
      #featured ul.controls li.next a { background-position: 0 0; }
-     #featured ul.controls li.next a:hover { background-position: 0 -30px; }
+
+     #featured ul.controls li a{ background-position: 0 0; color:#a8b934;}
+     #featured ul.controls li a:hover { background-position: 0 0; color:#8C9A34;}
      #featured ul.controls li.next span { background-position: 0 -60px; }
-  #introduction-a { position: relative; overflow: hidden; width: 950px; margin: 0 auto; padding: 25px 0 30px; background: url(../images/sep-a.gif) 50% 0 repeat-y; color: #7f675c; }
-   #introduction-a div.column { float: left; width: 420px; padding: 0 15px 0 40px; }
+  #introduction-a { position: relative; overflow: hidden; width: 950px; margin: 0 auto; padding: 25px 0 30px; background: rgba(252, 250, 225, 0.6); padding-bottom: 8px;}
+   #introduction-a div.column { float: left; width: 420px; padding: 0 15px 0 30px; }
     #introduction-a div.column h1 { color: #96654f; }
      #introduction-a div.column h1 small { display: block; text-transform: none; font-size: 12px;}
-    #introduction-a div.column p.more { position: absolute; bottom: 0; margin: 0; font-size: 1em; line-height: 2.5em; }
-     #introduction-a div.column p.more a { float: left; padding: 0 15px 0 20px; background: #040404 url(../images/bullet-b.gif) 10px 50% no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
-     #introduction-a div.column p.more a:hover { background-color: #000; color: #fff; }
-  #content { overflow: hidden; width: 934px; margin: 0 auto; padding: 9px 16px 10px 0;}
+    #introduction-a div.column p.more { bottom: 0; margin: 0; font-size: 1em; line-height: 2.0em; float: right;}
+     #introduction-a div.column p.more a { float: left; padding: 0 15px 0 20px; background: #96654f 10px 50% no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
+     #introduction-a div.column p.more a:hover { background-color: #63483B; color: #A2A6A5; }
+  #content { overflow: hidden; width: 934px; margin: 0 auto; padding: 9px 16px 10px 0; background-color: rgba(252, 250, 225, 0.6); }
    #side { float: left; width: 268px; padding: 157px 0 0 16px; }
     #subnav { position: relative; top: -157px; list-style: none; margin: 0 0 -157px -16px; width: 245px; padding: 35px 0 30px 20px; min-height: 80px; }
      #subnav li { width: 245px; line-height: 1em; }
@@ -172,9 +174,9 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #breadcrumbs a:hover { text-decoration: underline; }
      #breadcrumbs a.home { padding: 0 0 0 20px; background: url(../images/icons-guy.gif) 2px 20% no-repeat; }
      #breadcrumbs strong { padding: 0 2px; color: #3b5e73; }
-#outer-wrapper { background: #fff;  border-top: 1px solid rgba(0, 0, 0, 0.3); }
+#outer-wrapper { border-top: 1px solid rgba(0, 0, 0, 0.3); }
  #introduction-b { overflow: hidden; width: 950px; margin: 0 auto; padding: 20px 0 10px; background: url(../images/sep-b.gif) 50% 0 repeat-y; }
-  #introduction-b div.column { float: left; width: 420px; padding: 0 15px 0 40px; }
+  #introduction-b div.column { float: left; width: 420px; padding: 0 15px 0 30px; }
    #introduction-b div.column h2 { color: #000; font-size: 2.2em;}
    #introduction-b div.column div.photo { overflow: hidden; width: 315px; padding: 0 0 0 105px; background: url(../images/foto-koles.jpg) no-repeat; }
     #introduction-b div.column h3 { margin: 0 0 2px; font-size: 1.4em; font-weight: bold; }
@@ -256,7 +258,7 @@ ul.d { list-style: none; margin: 0 0 15px; padding: 0; background: url(../images
  ul.d li { margin: 0 0 5px; color: #888; font-size: 1em; text-transform: uppercase; }
   ul.d li a { display: block; padding: 3px 5px 3px 30px; background: url(../images/bullet-ga.gif) 13px 9px no-repeat; color: #888; text-decoration: none; }
   ul.d li a:hover { background-color: #000; background-image: url(../images/bullet-gb.gif); color: #fff; }
-  ul.d li a.active { background-color: #f5f4e0 !important; background-image: url(../images/bullet-ga.gif) !important; color: #888 !important; }
+  ul.d li a.active { background-color: rgba(0,0,0,0.6) !important}
    ul.d li a strong { display: block; color: #96654f; font-size: 1.2em; text-transform: none; }
    ul.d li a:hover strong { color: #fff; }
    ul.d li a.active strong { color: #96654f !important; }
@@ -287,7 +289,7 @@ p.button-b { overflow: hidden; width: 100%; margin: 0; font-size: 1em; line-heig
  
 div.toolbox { display: inline; float: right; width: 280px; margin: 0 0 5px 10px; padding: 10px 20px; border: 1px solid #e2e2e2; }
  div.toolbox h2 { position: relative; top: -18px; left: -10px; margin: 0 0 -10px; color: #040404; font-size: 1.3em; font-weight: bold; }
-  div.toolbox h2 span { padding: 2px 9px; border: 1px solid #e2e2e2; background: #fff; }
+  div.toolbox h2 span { padding: 2px 9px; border: 1px solid #e2e2e2; background-color: #E4E4D9; }
  div.toolbox ul.c { margin: 0; }
  
 dl.search { margin: 0 0 30px; padding: 0 0 0 25px; }
@@ -579,7 +581,7 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 /* HOME FEATURE
 --------------------------------------------- */
 
-#feature2, #feature3, #ardoise_naturelle, #celullose, #bardeaux, #produits_types, #steico_flex, #steico_protect, #steico_therm, #steico_floor, #celite {
+#feature2, #feature3, #feature4, #ardoise_naturelle, #celullose, #bardeaux, #produits_types, #steico_flex, #steico_protect, #steico_therm, #steico_floor, #celite {
   display:none;
 }
 
@@ -628,4 +630,110 @@ label.error {
 
 .text-centered {
   text-align: center;
+}
+
+.button {
+    outline: 0;
+    padding: 5px 12px;
+    display: block;
+    text-shadow: 1px 1px #1f272b;
+    border: 1px solid #1c252b;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.5);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
+}
+.button:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 ); /* ie */
+}
+.button:active {
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 6px 12px 4px;
+    background: #20282D; /* old browsers */
+    background: -moz-linear-gradient(top, #20282D 3%, #252E34 51%, #222A30 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#20282D), color-stop(51%,#252E34), color-stop(100%,#222A30)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20282D', endColorstr='#222A30',GradientType=0 ); /* ie */
+    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
+}
+
+.button-active {
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 6px 12px 4px;
+    background: #20282D; /* old browsers */
+    background: -moz-linear-gradient(top, #20282D 3%, #252E34 51%, #222A30 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#20282D), color-stop(51%,#252E34), color-stop(100%,#222A30)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20282D', endColorstr='#222A30',GradientType=0 ); /* ie */
+    -moz-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* Safari, Chrome */
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.1); /* CSS3 */
+}
+.gmnoprint {
+  display: none;
+}
+
+
+ul#navigation {
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    right: 420px;
+    list-style: none;
+    z-index:999999;
+}
+ul#navigation li {
+    display:inline;
+    float:left;
+    padding: 0 10px;
+    width:100px;
+    margin-left:1px;
+}
+ul#navigation li a {
+    display: block;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+    float: left;
+    width: 100px;
+    height: 35px;
+    color: #603d05;
+    background: transparent url(../images/item.png) no-repeat bottom right;
+    text-decoration:none;
+    text-align: center;
+    padding-top: 80px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+
+#home-nav {
+  -moz-transform: rotate(2deg);
+  -webkit-transform:rotate(2deg);
+  transform:rotate(2deg);
+}
+
+#techniques-nav {
+  -moz-transform: rotate(-9deg);
+  -webkit-transform:rotate(-9deg);
+  transform:rotate(-9deg);
+}
+
+#contact-nav {
+  -moz-transform: rotate(-8deg);
+  -webkit-transform:rotate(-8deg);
+  transform:rotate(-8deg);
+}
+
+#references-nav {
+  -moz-transform: rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  transform:rotate(4deg);
 }
