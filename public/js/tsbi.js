@@ -1,4 +1,5 @@
 $(function () {
+	Modernizr.load();
 	var d=300;
 	var url = window.location.pathname;
     $('#navigation a').each(function(){
