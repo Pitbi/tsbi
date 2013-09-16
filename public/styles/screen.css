@@ -146,14 +146,14 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #featured ul.controls li a{ background-position: 0 0; color:#a8b934;}
      #featured ul.controls li a:hover { background-position: 0 0; color:#8C9A34;}
      #featured ul.controls li.next span { background-position: 0 -60px; }
-  #introduction-a { position: relative; overflow: hidden; width: 950px; margin: 0 auto; padding: 25px 0 30px; background: rgba(252, 250, 225, 0.6); padding-bottom: 8px;}
+  #introduction-a { position: relative; overflow: hidden; width: 950px; margin: 0 auto; padding: 25px 0 30px; background: rgba(252, 250, 225, 0.6); padding-bottom: 8px;  filter : progid:DXImageTransform.Microsoft.gradient(startColorstr=#FCFAE1,endColorstr=#FCFAE1);}
    #introduction-a div.column { float: left; width: 420px; padding: 0 15px 0 30px; }
     #introduction-a div.column h1 { color: #96654f; }
      #introduction-a div.column h1 small { display: block; text-transform: none; font-size: 12px;}
     #introduction-a div.column p.more { bottom: 0; margin: 0; font-size: 1em; line-height: 2.0em; float: right;}
      #introduction-a div.column p.more a { float: left; padding: 0 15px 0 20px; background: #96654f 10px 50% no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
      #introduction-a div.column p.more a:hover { background-color: #63483B; color: #A2A6A5; }
-  #content { overflow: hidden; width: 934px; margin: 0 auto; padding: 9px 16px 10px 0; background-color: rgba(252, 250, 225, 0.6); }
+  #content { overflow: hidden; width: 934px; margin: 0 auto; padding: 9px 16px 10px 0; background-color: rgba(252, 250, 225, 0.6); filter : progid:DXImageTransform.Microsoft.gradient(startColorstr=#FCFAE1,endColorstr=#FCFAE1);}
    #side { float: left; width: 268px; padding: 157px 0 0 16px; }
     #subnav { position: relative; top: -157px; list-style: none; margin: 0 0 -157px -16px; width: 245px; padding: 35px 0 30px 20px; min-height: 80px; }
      #subnav li { width: 245px; line-height: 1em; }
