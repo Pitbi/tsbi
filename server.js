@@ -16,6 +16,7 @@ var ReferencesController = require("./controllers/references_controller")
 server.configure(function () {
   server.use(express.logger({format: "dev", stream: process.stdout}));
   server.use(express.static(__dirname + "/public"));
+  server.use(express.favicon(__dirname + '/public/favicon.ico'));
   server.use(express.bodyParser());
   server.use(express.methodOverride());
 	server.use(express.cookieParser());
