@@ -17,14 +17,14 @@ ContactController.prototype.GET = function () {
 ContactController.prototype.POST = function () {
   var self= this;
   var attributes = self.req.body;
-  var contactError = "Une erreure s'est produite lors de l'envoie de votre mail. Vérifiez que vous vous avez bien entrer votre nom nom, adresse email ainsi qu'une message."
+  var contactError = "Une erreure s'est produite lors de l'envoie de votre mail. Vérifiez que vous vous avez bien entrer votre nom nom, adresse email ainsi qu'un message."
   sendOfferByMail(attributes, function (err) {
     console.log("err", err);
   	if (err) {
       self.res.render("contact/show", {contactError: contactError});
     }
 
-  	
+  	self.req.flash('info', "Merci pour votre mail, nous vous recontacterons le plus vite possible.");
   	self.res.redirect("back");
   });
 };
