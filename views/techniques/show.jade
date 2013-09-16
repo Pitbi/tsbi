@@ -11,9 +11,11 @@ include ../layouts/application
 						a(href='#couverture') Couverture
 					li
 						a(href='#isolation') Isolation
+					li
+						a(href='#entreprises-general') Entrprises Général
 
 			#main(style="width:684px;")
-				#structure-bois
+				.works#structure-bois
 					p#breadcrumbs
 					h1 Structure Bois
 					#job
@@ -22,7 +24,8 @@ include ../layouts/application
 							| Entre ces éléments porteurs sont insérés l’isolation et les fenêtres. Ces murs font office de remplissage et n'ont pas de rôle porteur. Ce type de construction permet de réaliser de grandes 
 							| portées préservant de grands volumes libres et des façades très ouvertes. Sa complexité de réalisation la réserve habituellement à des réalisations de qualité.
 
-						h2 Ossatures Bois
+						h2 Ossatures bois
+						img.little-image-righted(src="images/charpente.jpg", style="float: right; margin-top: 4px;")
 						p La maison ossature bois est la technique de construction qui s’adapte le mieux à la plupartdes styles régionaux. C’est donc la plus répandue.
 							| Les murs de la maison à ossature de bois sont réalisés sur la base d’une structure constituée de membrures de bois espacées de 40 ou 60 cm (en général)
 							| entre lesquelles sont placés les matériaux isolants. L'achèvement de la construction couverte peut être obtenu en quelques jours seulement,
@@ -30,17 +33,18 @@ include ../layouts/application
 							| périphérique extérieure en matériau isolant lourd (type fibre de bois par exemple) qui améliore l'isolation, procure un meilleur déphasage thermique
 							| au bénéfice du confort d'été et supprime tous les ponts thermiques imputables à l'ossature bois. La maison à ossature bois permet des agrandissements
 							| plus économiques et rapides à mettre en œuvre.
-
-				#charpentes
+						div(style="text-align: center")
+							img.middle-image(src="images/structure2.jpg", style="margin-top: 4px;")
+				.works#charpentes
 					p#breadcrumbs
 					h1 Charpentes
-					img.little-image-righted(src="images/charpente.jpg", style="float: right;")
 					#job
 						h2 Auto-portante
 						p La charpente autoportante est constitué d’une unique panne faîtière sur la quelle viennent se poser les chevrons (3.8/23 cm). La dimension des chevrons permet de réaliser le pant de 
 							| toiture sans panne intermédiaire. De plus l’isolation pourra être réalisée dans l’épaisseur de la toiture.  Cette technique est la plus rentable en construction neuve.
-
-				#couverture
+						h2 Traditionnel
+						p ...
+				.works#couverture
 					p#breadcrumbs
 					h1 Couverture
 					#job
@@ -52,30 +56,32 @@ include ../layouts/application
 						p Elles sont fabriquées à partir de schiste ardoisier, débité puis scié à la dimension voulue. Une ardoise est imperméable, non poreuse, ingélive et résistante aux agents atmosphériques les 	
 							| plus agressifs. Les épaisseurs et les caractéristiques des ardoises naturelles sont normalisées. Ces produits peuvent être posés au crochet, c'est la méthode la plus répandue, ou au clou, c'est 
 							| un mode de pose à l'esthétique plus pure, obligatoire pour les monuments historiques.
-						h2 Nous posons deux familles de format :
-						#introduction-a(style="background: none;")
-							.column.first(style="width: 30%; padding: 0;")
-								| Le format rectangulaire, dit traditionnel;
-								br
-								img.little-image-righted(src="images/tsbi_ardoise1.jpg")
-							.column.second(style="width: 40%")
-								| Le format « carré sur pointe » (30cm x 30cm), dit économique.
-								br 
-								| En effet, ce dernier est imbattable pour son rapport duré de vie/prix.
-								br
-								img.little-image-righted(src="images/tsbi_ardoise2.jpg")
+						.tab
+							h4(style="color: black;") Nous posons deux familles de format :
+							#introduction-a(style="background: none; padding: 0;")
+								.column.first(style="width: 30%; padding: 0;")
+									| Le format rectangulaire, dit traditionnel.
+									br
+									img.little-image-righted(src="images/tsbi_ardoise1.jpg")
+								.column.second(style="width: 40%")
+									| Le format « carré sur pointe » (30cm x 30cm), dit économique.
+									br 
+									| En effet, ce dernier est imbattable pour son rapport duré de vie/prix.
+									br
+									img.little-image-righted(src="images/tsbi_ardoise2.jpg")
 
-				#isolation
+				.works#isolation
 					p#breadcrumbs
 					h1 Isolation
 					#job
 						h2 Sarking
+						img.little-image-righted(src="images/tsbi_steico_protect.jpg", style="float: right; margin-top: -20px;")
 						p Lorsque l'on désire garder la charpente apparente, il est nécessaire de poser l'isolant au-dessus 
 							| de ceux-ci. Dans ce cas la toiture "sarking" est la plus appropriée. Le sarking est un procédé 
 							| permettant d’isoler en continu par l’extérieur la toiture.
 						p Il se compose de différentes couches successives (de bas en haut) :
 						#introduction-a(style="background: none; padding: 0;")
-							.column.first(style="width: 30%; padding: 0;")
+							.column.first(style="width: 25%; padding: 0;")
 								img(src="images/tsbi_sark.jpg", style="width: 80%;")
 							.column.second
 								ol
@@ -101,6 +107,22 @@ include ../layouts/application
 							| Elle est fabriquée à partir d'environ 85 % de journaux recyclés Elle est idéale pour une pose 
 							| en toiture, combles, sous-pentes, murs. Elle procure une excellente protection contre le froid 
 							| en hiver et contre la chaleur en été (très bonne inertie thermique).
+
+
+				.works#entreprises-general
+					p#breadcrumbs
+					h1 Entreprises général
+					#job
+						ul
+							li Electricté
+							li Plomberie
+							li Plafonnage
+							li Cloisons
+							li Finitions diverses
+							li Maçonnerie
+
+
+
 #outer-wrapper
 	include ../includes/footer
 

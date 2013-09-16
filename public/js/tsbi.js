@@ -48,7 +48,7 @@ $(function () {
 		var parent = $(this).parent().parent().parent();
 
 		$('#subnav li a').each(function(){
-  	$(this).removeClass('active');
+  		$(this).removeClass('active');
     	var pageId = $(this).attr("href");
     	$(pageId).css("display", "none");
 		});
@@ -60,6 +60,22 @@ $(function () {
 			parentA.addClass('active');
 		}
 	});
+
+	if (url === "/techniques" && location.search) {
+		$('#subnav li a').each(function(){
+  		$(this).removeClass('active');
+    	var pageId = $(this).attr("href");
+    	$(pageId).css("display", "none");
+		});
+		var tech = "#" + location.search.substring(1);
+		if ($(tech)) {
+			$('a[href$="' + tech + '"]').addClass("active");
+			$(".works").each(function () {
+				$(this).hide();
+			});
+			$(tech).show();
+		}
+	}
 
 	$(".sub-sub-nav").click(function () {
 		var firstChild = $(this).siblings("ul");
@@ -84,8 +100,8 @@ $(function () {
 		if ($(nextFeature).is("div")) {
 			$(nextFeature).css("display", "block");	
 		} else {
-			featureIndex = 4;
-			$("#feature4").css("display", "block");
+			featureIndex = 5;
+			$("#feature5").css("display", "block");
 		}
 	});
 	

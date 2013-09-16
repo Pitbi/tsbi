@@ -1,10 +1,10 @@
-#feature1
+#feature2
 	h1
 		| Couverture 
 		span
 			small Ardoise, tuile et zinguerie
 	p.image
-		img(src='images/tsbi_home.jpg', alt='TSBI', title='TSBI', width='457', height='270')
+		img(src='/images/couverture1.JPG', alt='TSBI', title='TSBI', width='457', height='270')
 	//-p.date
 		| Added: 15
 		span /
@@ -29,16 +29,16 @@
 			a(href='./')
 				span View project
 		li(style="float: right;")
-			a(href='/techniques#couverture')
+			a(href='/techniques?couverture')
 				span En savoir plus...
 	include feature_control
-#feature2
+#feature1
 	h1
-		| Charpentes & Structure bois 
+		| Charpentes 
 		span
-			small Ossature bois
+			small Auto-portante
 	p.image
-		img(src='images/tsbi_home2.jpeg', alt='TSBI', title='TSBI', width='457', height='270')
+		img(src='/images/charpente1.JPG', alt='TSBI', title='TSBI', width='457', height='270')
 	//-p.date
 		| Added: 15
 		span /
@@ -62,17 +62,47 @@
 			a(href='./')
 				span View project
 		li(style="float: right;")
-			a(href='/techniques#charpentes')
+			a(href='/techniques?charpentes')
 				span En savoir plus...
 	include feature_control
 
 #feature3
 	h1
+		| Structure bois 
+		span
+			small Poteaux poutres & ossatures bois
+	p.image
+		img(src='/images/ossature.JPG', alt='TSBI', title='TSBI', width='457', height='270')
+	//-p.date
+		| Added: 15
+		span /
+		| 10
+		span /
+		| 2007
+	.details
+		p
+	ul.tabs
+		//-li.visit
+			a(href='./')
+				span Visit
+		//-li
+			strong
+				span Overview
+		//-li
+			a(href='./')
+				span View project
+		li(style="float: right;")
+			a(href='/techniques?structure-bois')
+				span En savoir plus...
+	include feature_control
+
+#feature4
+	h1
 		| Isolation 
 		span
 			small 
 	p.image
-		img(src='images/tsbi_home3.jpeg', alt='TSBI', title='TSBI', width='457', height='270')
+		img(src='/images/isolation.jpg', alt='TSBI', title='TSBI', width='457', height='270')
 	//-p.date
 		| Added: 15
 		span /
@@ -97,18 +127,18 @@
 			a(href='./')
 				span View project
 		li(style="float: right;")
-			a(href='/techniques#isolation')
+			a(href='/techniques?isolation')
 				span En savoir plus...
 	include feature_control
 
-#feature4
+#feature5
 	h1
 		| Entreprises général 
 		br
 		span
 			small Cloison, électricité, plomberie, maçonnerie
 	p.image
-		img(src='images/tsbi_home3.jpeg', alt='TSBI', title='TSBI', width='457', height='270')
+		img(src='/images/maconnerie.jpg', alt='TSBI', title='TSBI', width='457', height='270')
 	//-p.date
 		| Added: 15
 		span /
@@ -129,7 +159,7 @@
 		//-li
 			a(href='./')
 				span View project
-		//-li(style="float: right;")
-			a(href='./')
+		li(style="float: right;")
+			a(href='/techniques?entreprises-general')
 				span En savoir plus...
 	include feature_control

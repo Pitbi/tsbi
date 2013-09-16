@@ -41,7 +41,7 @@ legend.offset { display: none; }
 
 /* LAYOUT
 ------------------------------------------- */
-#wrapper { margin: -1px 0 0; padding: 0 0 20px 1px; position: relative; background: #574c2b; background-image: url("../images/zenbg-1.png");}
+#wrapper { margin: -1px 0 0; padding: 0 0 20px 1px; position: relative; background: #574c2b; background-image: url("../images/zenbg-1.png"), url("../images/zenbg-1-invert.png"); background-repeat: repeat-x, repeat;}
 .home #wrapper { }
  #wrapper div.wrapper-inner { position: relative; width: 100%;}
   #top { position: relative; width: 950px; height: 115px; margin: 0 auto; z-index: 250; padding-bottom: 8px; }
@@ -126,10 +126,10 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
    #featured ul.tabs { position: absolute; left: 500px; top: 244px; list-style: none; width: 395px; margin: 0; padding: 0; }
     #featured ul.tabs li { display: inline; float: left; margin: 0 3px 0 0; font-size: 1em; line-height: 28px; text-transform: uppercase; }
     #featured ul.tabs li.visit { float: right; margin: 0; }
-     #featured ul.tabs li a { float: left; padding: 0 0 0 2px; background: url(../images/tabs.png); color: #fff; text-decoration: none; }
+     #featured ul.tabs li a { float: left; padding: 0 0 0 2px;color: #fff; text-decoration: none; }
      #featured ul.tabs li a:hover { background-position: 0 -26px; background-color: rgba(0,0,0, 0.2); color: #A2A6A5;}
-     #featured ul.tabs li strong { float: left; padding: 0 0 0 2px; background: url(../images/tabs.png) 0 -52px; color: #fff; }
-      #featured ul.tabs li span { position: relative; overflow: hidden; float: left; height: 26px; margin: 0 -2px 0 0; padding: 0 15px 0 13px; background: url(../images/tabs.png) 100% 0 no-repeat; }
+     #featured ul.tabs li strong { float: left; padding: 0 0 0 2px; background: 0 -52px; color: #fff; }
+      #featured ul.tabs li span { position: relative; overflow: hidden; float: left; height: 26px; margin: 0 -2px 0 0; padding: 0 15px 0 13px; background: 100% 0 no-repeat; }
       #featured ul.tabs li a span { cursor: pointer; }
       #featured ul.tabs li a:hover span { background-position: 100% -26px; }
       #featured ul.tabs li strong span { background-position: 100% -52px !important; }
@@ -175,7 +175,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
      #breadcrumbs a.home { padding: 0 0 0 20px; background: url(../images/icons-guy.gif) 2px 20% no-repeat; }
      #breadcrumbs strong { padding: 0 2px; color: #3b5e73; }
 #outer-wrapper { border-top: 1px solid rgba(0, 0, 0, 0.3); }
- #introduction-b { overflow: hidden; width: 950px; margin: 0 auto; padding: 20px 0 10px; background: url(../images/sep-b.gif) 50% 0 repeat-y; }
+ #introduction-b { overflow: hidden; width: 950px; margin: 0 auto; padding: 20px 0 10px; background: 50% 0 repeat-y; }
   #introduction-b div.column { float: left; width: 420px; padding: 0 15px 0 30px; }
    #introduction-b div.column h2 { color: #000; font-size: 2.2em;}
    #introduction-b div.column div.photo { overflow: hidden; width: 315px; padding: 0 0 0 105px; background: url(../images/foto-koles.jpg) no-repeat; }
@@ -254,10 +254,10 @@ ul.c { list-style: none; margin-left: 0; margin-right: 0; padding: 0; }
   ul.c li a { text-decoration: none; }
   ul.c li a:hover { color: #3b5e73; text-decoration: underline; }
  
-ul.d { list-style: none; margin: 0 0 15px; padding: 0; background: url(../images/bullet-gb.gif) 1000px 0 no-repeat; }
+ul.d { list-style: none; margin: 0 0 15px; padding: 0; background: 1000px 0 no-repeat; }
  ul.d li { margin: 0 0 5px; color: #888; font-size: 1em; text-transform: uppercase; }
-  ul.d li a { display: block; padding: 3px 5px 3px 30px; background: url(../images/bullet-ga.gif) 13px 9px no-repeat; color: #888; text-decoration: none; }
-  ul.d li a:hover { background-color: #000; background-image: url(../images/bullet-gb.gif); color: #fff; }
+  ul.d li a { display: block; padding: 3px 5px 3px 30px; background: 13px 9px no-repeat; color: #888; text-decoration: none; }
+  ul.d li a:hover { background-color: #000; color: #fff; }
   ul.d li a.active { background-color: rgba(0,0,0,0.6) !important}
    ul.d li a strong { display: block; color: #96654f; font-size: 1.2em; text-transform: none; }
    ul.d li a:hover strong { color: #fff; }
@@ -278,14 +278,14 @@ div.code-switcher { overflow: hidden; width: 100%; font-size: 1em; text-transfor
  div.code-switcher a { display: inline; float: left; margin: 0 0 0 15px; padding: 0 10px; border: 2px solid #ebebeb; border-width: 2px 2px 0; background: #f9f9f9; color: #777; text-decoration: none; }
  
 p.button-a { overflow: hidden; width: 100%; margin: 0; font-size: 1em; line-height: 2em; }
- p.button-a a { float: left; padding: 0 15px 0 10px; background: #9d867a url(../images/bg-a.gif) 100% 0 no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
+ p.button-a a { float: left; padding: 0 15px 0 10px; background: #9d867a  100% 0 no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
  p.button-a a:hover { background-color: #8d766a; color: #fff; }
-  p.button-a a span { padding: 0 0 0 10px; background: url(../images/bullet-c.gif) 0 50% no-repeat; cursor: pointer; }
+  p.button-a a span { padding: 0 0 0 10px; background: 0 50% no-repeat; cursor: pointer; }
 
 p.button-b { overflow: hidden; width: 100%; margin: 0; font-size: 1em; line-height: 2em; }
- p.button-b a { float: left; padding: 0 15px 0 10px; background: #000 url(../images/bg-a.gif) 100% 0 no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
+ p.button-b a { float: left; padding: 0 15px 0 10px; background: #000 100% 0 no-repeat; color: #eee; text-transform: uppercase; text-decoration: none; }
  p.button-b a:hover { background-color: #111; color: #fff; }
-  p.button-b a span { padding: 0 0 0 10px; background: url(../images/bullet-c.gif) 0 50% no-repeat; cursor: pointer; }
+  p.button-b a span { padding: 0 0 0 10px; background: 0 50% no-repeat; cursor: pointer; }
  
 div.toolbox { display: inline; float: right; width: 290px; margin: 0 0 5px 10px; padding: 10px 20px; border: 1px solid #e2e2e2; }
  div.toolbox h2 { position: relative; top: -18px; left: -10px; margin: 0 0 -10px; color: #040404; font-size: 1.3em; font-weight: bold; }
@@ -429,7 +429,7 @@ p.error strong { display: block; padding: 0 0 0 17px; color: #BE2525; background
   #work-project div.buttons p { display: inline; float: left; width: auto; margin: 0 2px 0 0; }
  #work-project div.screens { position: absolute; right: -60px; width: 483px; }
  * html #work-project div.screens { right: -17px; }
-  #work-project div.screens div.pic { position: relative; overflow: hidden; width: 482px; height: 317px; padding: 0 0 0 1px; border-bottom: 7px solid #000; background: url(../images/sep-b.gif) repeat-y; }
+  #work-project div.screens div.pic { position: relative; overflow: hidden; width: 482px; height: 317px; padding: 0 0 0 1px; border-bottom: 7px solid #000; background: repeat-y; }
    #work-project div.screens div.pic p { position: relative; z-index: 10; margin: 0; }
     #viewport-clone { position: absolute; top: 0; left: 0; z-index: 20; width: 482px; height: 317px; }
 	#viewport-loader { top: 0; left: 0; width: 482px; height: 317px; z-index: 15; position: absolute; background: #000 url(../images/loader.gif) 50% 50% no-repeat; }
@@ -581,12 +581,18 @@ input:focus.DatePicker{	background: #fffce9 url(../images/datefocus.gif) no-repe
 /* HOME FEATURE
 --------------------------------------------- */
 
-#feature2, #feature3, #feature4, #charpentes, #couverture, #isolation {
+#feature2, #feature3, #feature4, #feature5, #charpentes, #couverture, #isolation, #entreprises-general {
   display:none;
 }
 
 .little-image-righted {
   height: 140px;
+  padding: 8px;
+}
+
+.middle-image {
+  margin: auto;
+  height: 200px;
   padding: 8px;
 }
 
@@ -736,4 +742,8 @@ ul#navigation li a {
   -moz-transform: rotate(4deg);
   -webkit-transform:rotate(4deg);
   transform:rotate(4deg);
+}
+
+.tab {
+  margin-left: 6%;
 }
