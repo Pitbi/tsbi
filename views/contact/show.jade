@@ -12,8 +12,11 @@ include ../layouts/application
 
             li
               a(href='mailto:ldtsbi@gmail.com') Louis Demees
-              small(style="color: #555; font-size: 10px;")  ldtsbi@gmail.com - +32 (0) 485/ 50 22 77
+              small(style="color: #555; font-size: 10px;")  ldmtsbi@gmail.com - +32 (0) 485/ 50 22 77
         #contact-details.vcard
+          - if (contactInfo)
+            p(style="background-color: rgb(149, 185, 149); padding: 4px 8px; display: inline-block; font-weight: bold;")
+              | Merci pour votre mail, nous vous recontacterons le plus vite possible.
           p
             strong
               a.fn.org.url(href='./') TSBI Construct
@@ -29,7 +32,7 @@ include ../layouts/application
 
             br
             | e-mail général: 
-            a.email(href='#contact-form') info@tsbi.be
+            a.email(href='#contact-form') ldmtsbi@gmail.com
           p
             
         p(style="text-align: center; padding-top: 14px;")

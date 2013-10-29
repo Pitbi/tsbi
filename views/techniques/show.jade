@@ -4,25 +4,25 @@ include ../layouts/application
 				h2.offset Secondary navigation
 				ul#subnav
 					li.first
-						a.active(href="#structure-bois") Structure Bois
-					li
-						a(href='#charpentes') Charpentes
+						a.active(href='#charpentes') Charpentes
 					li
 						a(href='#couverture') Couverture
 					li
+						a(href="#structure-bois") Structure Bois
+					li
 						a(href='#isolation') Isolation
 					li
-						a(href='#entreprises-general') Entrprises Général
+						a(href='#entreprises-general') Entreprises Général
 
 			#main(style="width:684px;")
-				.works#structure-bois
+				.works#structure-bois(style="display: none;")
 					p#breadcrumbs
 					h1 Structure Bois
 					#job
 						h2 Poteaux poutres
 						p La structure porteuse est constituée de poteaux et de poutres généralement en bois massif ou lamellé-collé, assemblés rigidement entre eux ce qui lui donne une grande indéformabilité.
 							| Entre ces éléments porteurs sont insérés l’isolation et les fenêtres. Ces murs font office de remplissage et n'ont pas de rôle porteur. Ce type de construction permet de réaliser de grandes 
-							| portées préservant de grands volumes libres et des façades très ouvertes. Sa complexité de réalisation la réserve habituellement à des réalisations de qualité.
+							| portées préservant de grands volumes libres et des façades très ouvertes.
 
 						h2 Ossatures bois
 						img.little-image-righted(src="/images/charpente.JPG", style="float: right; margin-top: 4px;")
@@ -36,7 +36,7 @@ include ../layouts/application
 						div(style="text-align: center")
 							img.middle-image(src="/images/structure2.JPG")
 							img.middle-image(src="/images/structure3.JPG")
-				.works#charpentes
+				.works#charpentes(style="display: block;")
 					p#breadcrumbs
 					h1 Charpentes
 					#job

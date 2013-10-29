@@ -46,7 +46,7 @@ legend.offset { display: none; }
  #wrapper div.wrapper-inner { position: relative; width: 100%;}
   #top { position: relative; width: 950px; height: 115px; margin: 0 auto; z-index: 250; padding-bottom: 8px; }
   #top.short { height: 125px; }
-   #logo { position: absolute; top: 15px; margin: 0; border-radius: 4px;}
+   #logo { position: absolute; top: 5px; margin: 0; border-radius: 4px;}
     #logo a {overflow: hidden; width: 224px; height: 65px;  text-indent: -10001px; }
     .pl #logo a {}
      #logo a img {}

@@ -11,7 +11,7 @@ var ContactController = function(req, res, next) {
 ContactController.prototype.GET = function () {
   var self= this;
 
-  self.res.render("contact/show", {contactError: null});
+  self.res.render("contact/show", {contactError: null, contactInfo: null});
 };
 
 ContactController.prototype.POST = function () {
@@ -19,13 +19,11 @@ ContactController.prototype.POST = function () {
   var attributes = self.req.body;
   var contactError = "Une erreure s'est produite lors de l'envoie de votre mail. Vérifiez que vous vous avez bien entrer votre nom nom, adresse email ainsi qu'un message."
   sendOfferByMail(attributes, function (err) {
-    console.log("err", err);
   	if (err) {
-      self.res.render("contact/show", {contactError: contactError});
+      self.res.render("contact/show", {contactError: contactError, contactInfo: null});
     }
 
-  	self.req.flash('info', "Merci pour votre mail, nous vous recontacterons le plus vite possible.");
-  	self.res.redirect("back");
+  	self.res.render("contact/show", {contactError: null, contactInfo: true});
   });
 };
 
@@ -34,6 +32,8 @@ module.exports = ContactController;
 
 
 var sendOfferByMail = function(attributes, callback) {
+  console.log(attributes);
+  var message = attributes.message + "\r\n\r\n\r\n Répondre à l'adresse suivante: " + attributes.email
   var server  = email.server.connect({
     user: config.smtp.user,
     password: config.smtp.password,
@@ -41,9 +41,9 @@ var sendOfferByMail = function(attributes, callback) {
     ssl: true
   });
   server.send({
-    text:    attributes.message,
+    text:    message,
     from:    config.smtp.sender,
-    to:      "pierre.biezemans@gmail.com",
+    to:      config.smtp.sender,
     subject: "TSBI.be: " + attributes.subject
   }, callback);
 };
