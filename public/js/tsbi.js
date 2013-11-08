@@ -31,12 +31,13 @@ $(function () {
       }
     );
 
+
 	if (url != "/") {
 		$("#wrapper").css("height", "100%");
 	} else {
 			var homeCarouselTimer = 0;
 			setInterval(function(){
-				if (homeCarouselTimer >= 15) {
+				if (homeCarouselTimer >= 20) {
 					switchToNextFeature();
 					homeCarouselTimer = 0;
 				} else {
@@ -106,7 +107,6 @@ $(function () {
 	});
 	
 
-
 	var switchToNextFeature = function () {
 		var currentFeature = "#feature" + featureIndex;
 		featureIndex = featureIndex + 1;
@@ -120,5 +120,22 @@ $(function () {
 			$("#feature1").css("display", "block");
 		}
 	}
+
+
+
+  if (url.match("references")) {
+  	$("#carousel").hide();
+  	setTimeout(function() {
+  		$("#carousel").fadeIn("slow");
+  	}, 300)
+  	Shadowbox.init();
+  	$(".reference-link").each(function () {
+  		if ($(this).attr("href") === url) {
+  			$(this).addClass("active");
+  		} else {
+  			$(this).removeClass("active");
+  		}
+  	});
+  }
 });
 
