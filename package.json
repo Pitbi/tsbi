@@ -5,7 +5,7 @@
     "www.tsbi.be"
   ],
   "name": "TSBI",
-  "version": "0.0.0-33",
+  "version": "0.0.0-40",
   "description": "TSBI Construct. ",
   "main": "index.js",
   "dependencies": {

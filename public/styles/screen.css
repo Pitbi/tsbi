@@ -158,7 +158,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
     #subnav { position: relative; top: -157px; list-style: none; margin: 0 0 -157px -16px; width: 245px; padding: 35px 0 30px 20px; min-height: 80px; }
      #subnav li { width: 245px; line-height: 1em; }
      #subnav li.first { border-top: none; }
-      #subnav li a { position: relative; display: block; width: 210px; margin: 0 -3px 0 0; padding: 10px 18px 10px 20px; background: url(../images/bullet-d.gif) 1000px 50% no-repeat; color: #4E6F5D; text-decoration: none; }
+      #subnav li a { position: relative; display: block; width: 210px; margin: 0 -3px 0 0; padding: 10px 18px 10px 20px; color: #4E6F5D; text-decoration: none; }
       #subnav li a:hover { background-position: 100% 50%; color: #885a44; }
       #subnav li a.active { background-position: 100% 50%; color: #885a44;}
       #subnav li ul { overflow: hidden; list-style: none; width: 230px; margin: 0; padding: 5px 0 0; }
@@ -168,7 +168,7 @@ a.yahoo { overflow: hidden; display: block; width: 101px; height: 10px; backgrou
         #subnav li li a:hover { background: url(../images/bullet-gb.gif) 100% 9px no-repeat; color: #885a44; }
    .single #main { float: none; width: auto; margin: 0 0 0 16px; padding: 0 35px 0 35px;}
    #main { float: right; width: 576px; padding: 0 22px 0 50px; min-height: 200px;}
-    #breadcrumbs { position: relative; background: url(../images/sep-c.gif) 0 100% repeat-x; color: #888; font-size: 1em; text-transform: uppercase; }
+    #breadcrumbs { position: relative; color: #888; font-size: 1em; text-transform: uppercase; }
     .single #breadcrumbs { margin: 0 0 25px -35px; padding-left: 20px; border-bottom: 1px solid #e5e5e5; background: none; color: #888; font-size: 1em; text-transform: uppercase; }
      #breadcrumbs a { padding: 0 2px; color: #888; text-decoration: none; }
      #breadcrumbs a:hover { text-decoration: underline; }
@@ -249,7 +249,7 @@ ul.b { list-style: none; margin-left: 0; margin-right: 0; padding: 0; background
   ul.b li a:hover { color: #fff; background-color: #000; background-image: url(../images/bullet-gb.gif); }
  
 ul.c { list-style: none; margin-left: 0; margin-right: 0; padding: 0; }
- ul.c li { padding: 4px 0 5px; background: url(../images/sep-c.gif) repeat-x; }
+ ul.c li { padding: 4px 0 5px;  }
  ul.c li.first { background: none; }
   ul.c li a { text-decoration: none; }
   ul.c li a:hover { color: #3b5e73; text-decoration: underline; }
@@ -340,8 +340,8 @@ div.blog-post-info { overflow: hidden; width: 100%; border-top: 2px solid #ebebe
     #post-comment form fieldset div input { width: 240px; margin: 0 15px 0 0; padding: 3px 5px; border: 1px solid #d8d8d8; }
     #post-comment form fieldset div textarea { width: 420px; height: 180px; padding: 3px 5px; border: 1px solid #d8d8d8; }
 		#post-comment form fieldset p.error strong { display: block; margin: 2px 0 0 90px; }
-    #post-comment form fieldset div button { padding: 3px 15px 3px 10px; border: none; background: #040404 url(../images/bg-comment-submit.gif) 100% 100% no-repeat; color: #fff; }
-     #post-comment form fieldset div button span { padding: 0 0 0 10px; background: url(../images/bullet-f.gif) 0 50% no-repeat; }
+    #post-comment form fieldset div button { padding: 3px 15px 3px 10px; border: none; color: #fff; }
+     #post-comment form fieldset div button span { padding: 0 0 0 10px;  }
 	 
 .sidebar-section { padding: 15px 15px 0; border: 1px solid #e2e2e2; border-width: 0 1px 1px 0; }
  .sidebar-section  h2 { color: #000; font-size: 1.4em; font-weight: bold; }
@@ -408,8 +408,8 @@ img.messenger { vertical-align:middle; }
     #contact-form form fieldset.second p input { position: absolute; top: 0; left: 0; margin: 3px 0 0; }
     * html #contact-form form fieldset.second p input { margin: 0; }
  #contact-form div.submit { text-transform: uppercase; text-align: right; }
-  #contact-form div.submit button { padding: 3px 15px 3px 10px; border: none; background: #040404 url(../images/bg-comment-submit.gif) 100% 100% no-repeat; color: #fff; }
-   #contact-form div.submit button span { padding: 0 0 0 10px; background: url(../images/bullet-f.gif) 0 50% no-repeat; }
+  #contact-form div.submit button { padding: 3px 15px 3px 10px; border: none; color: #fff; }
+   #contact-form div.submit button span { padding: 0 0 0 10px; }
  #contact-form .send-ok { background: #F0EDE7; padding: 1em; text-align: center; font-size: 1.2em; margin: 0 0 0.5em;  }
 
 p.error input, 
@@ -497,8 +497,8 @@ ul.clients { overflow: hidden; list-style: none; width: 100%; margin: 0 0 15px; 
   ul.clients li img { display: block; margin: 0 auto; }
   
 /* jobs */
-#job { padding: 10px 15px 0; background: url(../images/jobs-top.jpg) 0 0 no-repeat; line-height: 2em; }
-  #job .paper { margin: 0 -39px 20px; padding: 0 39px 50px; background: url(../images/jobs-bottom.jpg) 50% 100% no-repeat; }
+#job { padding: 10px 15px 0; line-height: 2em; }
+  #job .paper { margin: 0 -39px 20px; padding: 0 39px 50px;  }
   #job ul.a li { background-position: 6px 9px; }
 
 	
@@ -543,7 +543,7 @@ ul.clients { overflow: hidden; list-style: none; width: 100%; margin: 0 0 15px; 
      #feedback div.form form fieldset p textarea { overflow: auto; width: 260px; height: 100px; padding: 2px; border: 1px solid #ccc; }
     #feedback div.form form fieldset p.submit { font-size: 1em; text-transform: uppercase; }
      #feedback div.form form fieldset p button { padding: 3px 15px 3px 10px; border: none; background: #9d867a url(../images/bg-feedback-submit.gif) 100% 0 no-repeat; color: #fff; }
-      #feedback div.form form fieldset p button span { padding: 0 0 0 10px; background: url(../images/bullet-f.gif) 0 50% no-repeat; }
+      #feedback div.form form fieldset p button span { padding: 0 0 0 10px; }
  #feedback p.intro { margin: 0 0 30px; }
  #feedback div.paging { }
   #feedback div.paging p { margin: 0; }
